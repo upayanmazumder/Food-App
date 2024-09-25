@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const authRoutes = require('./routes/auth');
-const allergensRoutes = require('./routes/allergens'); // Import new route
+const allergensRoutes = require('./routes/allergens');
+const updateAllergiesRoutes = require('./routes/updateAllergies');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
@@ -33,7 +34,9 @@ app.get('/', (req, res) => {
 
 // Routes
 app.use('/api', authRoutes);
-app.use('/api', allergensRoutes); // Use the allergens routes
+app.use('/api', allergensRoutes);
+app.use('/api', updateAllergiesRoutes);
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
