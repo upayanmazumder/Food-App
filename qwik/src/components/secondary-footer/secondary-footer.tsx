@@ -47,7 +47,11 @@ export default component$(() => {
         <div class={secFooterStyles.boxSupport}>
           <p class={secFooterStyles.title}>Support</p>
           <div class={secFooterStyles.emailWrapper}>
+<<<<<<< HEAD
             <p>Reach out to :   
+=======
+            <p class={secFooterStyles.p}>Reach out to: 
+>>>>>>> b060ca41c99b1d1cfea864eb5b69c0c5474bb59e
               <a href={`mailto:${companyDetails.email}`} class={secFooterStyles.email}>
                 {companyDetails.email}
               </a>
