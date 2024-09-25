@@ -28,9 +28,9 @@ export default component$(() => {
   });
 
   return (
-    <div class={sessionStyles.container}>
+    <>
       {isSignedIn ? (
-        <>
+        <div class={sessionStyles.container}>
           <a href="/profile">
             <div class={sessionStyles.imgContainer}>
               <img
@@ -47,7 +47,7 @@ export default component$(() => {
             <p>{session.value.user?.name}</p>
             <p>{session.value.user?.email}</p>
           </div>
-        </>
+        </div>
       ) : (
         <Form action={signIn} class={sessionStyles.form}>
           <input type="hidden" name="providerId" value="google" />
@@ -57,6 +57,6 @@ export default component$(() => {
           </button>
         </Form>
       )}
-    </div>
+    </>
   );
 });
