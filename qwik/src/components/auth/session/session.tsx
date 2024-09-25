@@ -3,7 +3,7 @@ import { useSession, useSignIn } from '~/routes/plugin@auth';
 import sessionStyles from "./session.module.css";
 import { Form } from '@builder.io/qwik-city';
 import { BsGoogle } from "@qwikest/icons/bootstrap";
-import unknownPerson from "../../../media/authentication/unknown-person.png"
+import unknownPerson from "../../../media/authentication/unknown-person.png";
 
 export default component$(() => {
   const session = useSession();
@@ -13,23 +13,27 @@ export default component$(() => {
   // Signal to hold the response or status after POST request
   const signupStatus = useSignal<string>('Not yet signed up');
 
-  // Function to handle the POST request to /signup
+  // Function to handle the POST request to /api/auth
   const signup = $(async (email: string) => {
     try {
-      const response = await fetch('http://localhost:3000/signup', {
+      const response = await fetch('http://localhost:3000/api/auth', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email }),
       });
+
       if (response.ok) {
         signupStatus.value = 'Signed up successfully!';
       } else {
         signupStatus.value = `Failed to sign up: ${response.status}`;
       }
     } catch (error) {
-      if (error instanceof Error) {
+      // Check for network error and set message accordingly
+      if (error instanceof TypeError) {
+        signupStatus.value = 'bruh'; // API is down or network error
+      } else if (error instanceof Error) {
         signupStatus.value = `Error: ${error.message}`;
       } else {
         signupStatus.value = 'An unknown error occurred';
@@ -37,10 +41,10 @@ export default component$(() => {
     }
   });
 
-  // Trigger the signup task when user is signed in and has an email
+  // Trigger the signup task when the component mounts and user has an email
   useTask$(({ track }) => {
     const email = track(() => session.value?.user?.email);
-    if (email) {
+    if (isSignedIn && email) {
       signup(email);
     }
   });
@@ -64,9 +68,6 @@ export default component$(() => {
           <div class={sessionStyles.userInfo}>
             <p>{session.value.user?.name}</p>
             <p>{session.value.user?.email}</p>
-          </div>
-          <div class={sessionStyles.signupStatus}>
-            <p>{signupStatus.value}</p>
           </div>
         </>
       ) : (
