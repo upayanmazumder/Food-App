@@ -13,7 +13,7 @@ export default component$(() => {
         </div>
         <nav class={styles.nav}>
           <ul class={styles.navList}>
-            <li> <a href="/home">Home</a></li>
+            <li> <a href="/">Home</a></li>
             <li> <a href='/recipes'>Recipes</a></li>
             <li><a href='/upload'>Upload</a></li>
             <li id="profile"><a href="/profile">Profile</a></li>
