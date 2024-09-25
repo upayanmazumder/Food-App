@@ -3,12 +3,13 @@ const admin = require('firebase-admin');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const path = require('path'); // Import the path module
 
 // Load environment variables
 dotenv.config();
 
 // Initialize Firebase Admin SDK
-const firebaseConfig = JSON.parse(fs.readFileSync('./firebaseconfig.json', 'utf8'));
+const firebaseConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'firebaseconfig.json'), 'utf8')); // Use __dirname
 admin.initializeApp({
   credential: admin.credential.cert(firebaseConfig)
 });
