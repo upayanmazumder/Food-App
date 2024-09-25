@@ -9,7 +9,7 @@ export default component$(() => {
     <footer>
       <div class="container">
         <a href="https://upayan.space/" target="_blank" class={styles.anchor}>
-          <span>Made with ♡ by Upayan</span>
+          <span>Made with ♡ by Byte Me</span>
           <span class={styles.spacer}>|</span>
           <span>{serverTime.value.date}</span>
         </a>
