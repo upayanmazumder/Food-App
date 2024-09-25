@@ -16,7 +16,7 @@ export default component$(() => {
   // Function to handle signup
   const signup = $(async (email: string) => {
     try {
-      const response = await fetch(`http://food-app-api.upayan.space/api/auth`, {
+      const response = await fetch(`https://food-app-api.upayan.space/api/auth`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,6 @@ export default component$(() => {
           <div class={sessionStyles.userInfo}>
             <p>{session.value.user?.name}</p>
             <p>{session.value.user?.email}</p>
-            <p>{signupStatus.value}</p> {/* Display the signup status */}
           </div>
         </div>
       ) : (
