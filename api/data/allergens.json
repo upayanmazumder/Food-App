@@ -1,244 +1,1997 @@
 [
-  {
-    "mainIngredient": "Almonds",
-    "sweetener": "Sugar",
-    "fatOil": "Butter",
-    "allergens": [
-      "Almonds",
-      "Wheat",
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Chicken broth",
-    "sweetener": "None",
-    "fatOil": "None",
-    "allergens": [
-      "Chicken",
-      "Wheat",
-      "Celery"
-    ]
-  },
-  {
-    "mainIngredient": "Cheese",
-    "sweetener": "None",
-    "fatOil": "None",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Buttermilk",
-    "sweetener": "Sugar",
-    "fatOil": "Vegetable oil",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Popcorn",
-    "sweetener": "Sugar",
-    "fatOil": "Butter",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Romaine lettuce",
-    "sweetener": "None",
-    "fatOil": "Olive oil",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Grilled chicken",
-    "sweetener": "None",
-    "fatOil": "Caesar dressing",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Strawberries",
-    "sweetener": "Honey",
-    "fatOil": "Yogurt (milk, cultures)",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Cheese",
-    "sweetener": "None",
-    "fatOil": "None",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Cheese",
-    "sweetener": "None",
-    "fatOil": "None",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Potatoes",
-    "sweetener": "None",
-    "fatOil": "Butter",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Yogurt (milk, cultures)",
-    "sweetener": "None",
-    "fatOil": "None",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Grilled chicken",
-    "sweetener": "None",
-    "fatOil": "Caesar dressing",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Tomatoes",
-    "sweetener": "None",
-    "fatOil": "Olive oil",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Mixed berries",
-    "sweetener": "Sugar",
-    "fatOil": "Yogurt (milk, cultures)",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Romaine lettuce",
-    "sweetener": "None",
-    "fatOil": "Olive oil",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Mixed berries",
-    "sweetener": "Sugar",
-    "fatOil": "Yogurt (milk, cultures)",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Chicken",
-    "sweetener": "None",
-    "fatOil": "Butter",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Pesto sauce",
-    "sweetener": "None",
-    "fatOil": "None",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Beef",
-    "sweetener": "None",
-    "fatOil": "Sour cream",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Bananas",
-    "sweetener": "Honey",
-    "fatOil": "Yogurt (milk, cultures)",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Watermelon",
-    "sweetener": "None",
-    "fatOil": "None",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Chicken",
-    "sweetener": "None",
-    "fatOil": "Bread crumbs, Parmesan cheese",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Mango",
-    "sweetener": "Sugar",
-    "fatOil": "Yogurt (milk, cultures)",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Cucumbers",
-    "sweetener": "None",
-    "fatOil": "Olive oil",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Butternut squash",
-    "sweetener": "None",
-    "fatOil": "Butter",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Pasta",
-    "sweetener": "None",
-    "fatOil": "Olive oil",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "mainIngredient": "Lamb",
-    "sweetener": "None",
-    "fatOil": "None",
-    "allergens": [
-      "Dairy"
-    ]
-  },
-  {
-    "email": "YOUR_EMAIL",
-    "allergens": [
-      "Allergen1",
-      "Allergen2"
-    ]
-  },
-  {
-    "email": "upayanm3@gmail.com",
-    "allergens": [
-      "wheat",
-      "Chicken"
-    ]
-  }
+    {
+        "mainIngredient": "Almonds",
+        "fatOil": "Butter",
+        "allergens": "Almonds, Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Almonds",
+        "fatOil": "Butter",
+        "allergens": "Almonds, Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken broth",
+        "fatOil": "None",
+        "allergens": "Chicken, Wheat, Celery"
+    },
+    {
+        "mainIngredient": "Chicken broth",
+        "fatOil": "None",
+        "allergens": "Chicken, Wheat, Celery"
+    },
+    {
+        "mainIngredient": "Cheese",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Buttermilk",
+        "fatOil": "Vegetable oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Popcorn",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Romaine lettuce",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Grilled chicken",
+        "fatOil": "Caesar dressing",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Strawberries",
+        "fatOil": "Yogurt (milk, cultures)",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Cheese",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Cheese",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Potatoes",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Yogurt (milk, cultures)",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Grilled chicken",
+        "fatOil": "Caesar dressing",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Mixed berries",
+        "fatOil": "Yogurt (milk, cultures)",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Romaine lettuce",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Mixed berries",
+        "fatOil": "Yogurt (milk, cultures)",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Pesto sauce",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Sour cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Bananas",
+        "fatOil": "Yogurt (milk, cultures)",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Watermelon",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Bread crumbs, Parmesan cheese",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Mango",
+        "fatOil": "Yogurt (milk, cultures)",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Cucumbers",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Butternut squash",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Lamb",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Mushrooms",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Greek yogurt",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Eggplant",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Bananas",
+        "fatOil": "Milk",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Pizza dough",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Caesar dressing",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Mushrooms",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Yogurt (milk, cultures)",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "Cream cheese, sour cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chocolate",
+        "fatOil": "Heavy cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Portobello mushrooms",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Yogurt",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Sour cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Strawberries",
+        "fatOil": "Yogurt",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Mushrooms",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Pumpkin",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Butternut squash",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Berries",
+        "fatOil": "Yogurt",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Mushrooms",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "Cream cheese, sour cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chocolate",
+        "fatOil": "Heavy cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Portobello mushrooms",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Yogurt",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Sour cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Strawberries",
+        "fatOil": "Yogurt",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Yogurt",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Lamb",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Paneer",
+        "fatOil": "Oil",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Lentils",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Cottage cheese",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Milk solids",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Lentil dumplings",
+        "fatOil": "Yogurt",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Cream",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Paneer",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Paneer",
+        "fatOil": "None",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Milk",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Milk solids",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Lamb",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Rice",
+        "fatOil": "Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Paneer",
+        "fatOil": "Milk, Ghee",
+        "allergens": "Dairy"
+    },
+    {
+        "mainIngredient": "Chicken breast",
+        "fatOil": "Olive oil",
+        "allergens": "Dairy, Anchovies"
+    },
+    {
+        "mainIngredient": "Chocolate",
+        "fatOil": "Heavy cream",
+        "allergens": "Dairy, Cocoa"
+    },
+    {
+        "mainIngredient": "Bacon",
+        "fatOil": "Heavy cream",
+        "allergens": "Dairy, Eggs"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Dairy, Fish"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Ghee",
+        "allergens": "Dairy, Ghee"
+    },
+    {
+        "mainIngredient": "Sweet potatoes",
+        "fatOil": "Butter",
+        "allergens": "Dairy, Nuts"
+    },
+    {
+        "mainIngredient": "Brie cheese",
+        "fatOil": "None",
+        "allergens": "Dairy, Nuts"
+    },
+    {
+        "mainIngredient": "Onions",
+        "fatOil": "Butter",
+        "allergens": "Dairy, Wheat"
+    },
+    {
+        "mainIngredient": "Lamb/Chicken",
+        "fatOil": "None",
+        "allergens": "Dairy, Wheat"
+    },
+    {
+        "mainIngredient": "Onions",
+        "fatOil": "Butter",
+        "allergens": "Dairy, Wheat"
+    },
+    {
+        "mainIngredient": "Eggs",
+        "fatOil": "Butter",
+        "allergens": "Eggs"
+    },
+    {
+        "mainIngredient": "Eggs",
+        "fatOil": "None",
+        "allergens": "Eggs"
+    },
+    {
+        "mainIngredient": "Eggs",
+        "fatOil": "None",
+        "allergens": "Eggs"
+    },
+    {
+        "mainIngredient": "Eggs",
+        "fatOil": "Cheese",
+        "allergens": "Eggs, Dairy"
+    },
+    {
+        "mainIngredient": "Eggs",
+        "fatOil": "None",
+        "allergens": "Eggs, Mustard"
+    },
+    {
+        "mainIngredient": "Eggs",
+        "fatOil": "Sesame oil",
+        "allergens": "Eggs, Soybeans"
+    },
+    {
+        "mainIngredient": "Fish fillets",
+        "fatOil": "Vegetable oil",
+        "allergens": "Fish"
+    },
+    {
+        "mainIngredient": "Fish fillets",
+        "fatOil": "Vegetable oil",
+        "allergens": "Fish"
+    },
+    {
+        "mainIngredient": "Salmon fillet",
+        "fatOil": "Olive oil",
+        "allergens": "Fish"
+    },
+    {
+        "mainIngredient": "Salmon",
+        "fatOil": "Vegetable oil",
+        "allergens": "Fish"
+    },
+    {
+        "mainIngredient": "Salmon",
+        "fatOil": "Olive oil",
+        "allergens": "Fish"
+    },
+    {
+        "mainIngredient": "Salmon",
+        "fatOil": "Olive oil",
+        "allergens": "Fish"
+    },
+    {
+        "mainIngredient": "Salmon",
+        "fatOil": "Olive oil",
+        "allergens": "Fish"
+    },
+    {
+        "mainIngredient": "Fish",
+        "fatOil": "Coconut oil",
+        "allergens": "Fish, Coconut"
+    },
+    {
+        "mainIngredient": "Cod",
+        "fatOil": "Butter",
+        "allergens": "Fish, Dairy"
+    },
+    {
+        "mainIngredient": "Cod",
+        "fatOil": "Butter",
+        "allergens": "Fish, Dairy"
+    },
+    {
+        "mainIngredient": "Tuna",
+        "fatOil": "None",
+        "allergens": "Fish, Eggs"
+    },
+    {
+        "mainIngredient": "Tuna",
+        "fatOil": "None",
+        "allergens": "Fish, Eggs"
+    },
+    {
+        "mainIngredient": "Fish (salmon, tuna)",
+        "fatOil": "Sesame oil",
+        "allergens": "Fish, Soybeans"
+    },
+    {
+        "mainIngredient": "Salmon fillet",
+        "fatOil": "Soy sauce",
+        "allergens": "Fish, Soybeans"
+    },
+    {
+        "mainIngredient": "Sushi rice",
+        "fatOil": "Soy sauce",
+        "allergens": "Fish, Soybeans"
+    },
+    {
+        "mainIngredient": "Salmon",
+        "fatOil": "Soy sauce",
+        "allergens": "Fish, Soybeans"
+    },
+    {
+        "mainIngredient": "Sushi rice",
+        "fatOil": "Soy sauce",
+        "allergens": "Fish, Soybeans"
+    },
+    {
+        "mainIngredient": "Salmon",
+        "fatOil": "Soy sauce",
+        "allergens": "Fish, Soybeans"
+    },
+    {
+        "mainIngredient": "Sugar",
+        "fatOil": "Milk powder",
+        "allergens": "Milk"
+    },
+    {
+        "mainIngredient": "Sugar",
+        "fatOil": "Milk powder",
+        "allergens": "Milk"
+    },
+    {
+        "mainIngredient": "Milk",
+        "fatOil": "Cream",
+        "allergens": "Milk"
+    },
+    {
+        "mainIngredient": "Yogurt (milk, cultures)",
+        "fatOil": "None",
+        "allergens": "Milk"
+    },
+    {
+        "mainIngredient": "Yogurt (milk, cultures)",
+        "fatOil": "None",
+        "allergens": "Milk, Strawberries"
+    },
+    {
+        "mainIngredient": "Yogurt (milk, cultures)",
+        "fatOil": "None",
+        "allergens": "Milk, Strawberries"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Oranges",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Cucumber",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Ground beef",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken breast",
+        "fatOil": "Mustard",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Pork ribs",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Quinoa",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed vegetables",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Ground beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Potatoes",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Lemon juice",
+        "fatOil": "Water",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Ground beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Lentils",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Eggplant",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed vegetables",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Pancetta",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Coconut milk",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Eggplant",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Avocado",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Black beans",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Ground beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Cucumber",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed fruits",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Sausage",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mango",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Lentils",
+        "fatOil": "Coconut milk",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "Avocado",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Bell peppers",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Cabbage",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Sweet potatoes",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Ground beef",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Pesto sauce",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Ground beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mushrooms",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Zucchini",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Quinoa",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Quinoa",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed vegetables",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken wings",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Lentils",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Cabbage",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Lentils",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Pizza dough",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Coconut milk",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Pesto sauce",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Tofu",
+        "fatOil": "Coconut milk",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Bell peppers",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Bell peppers",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Eggplant",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Brussels sprouts",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken wings",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mango",
+        "fatOil": "Coconut milk",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mango",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Onions",
+        "fatOil": "Butter",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Carrots",
+        "fatOil": "Butter",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Cucumbers",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Potatoes",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Avocado",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Brussels sprouts",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed vegetables",
+        "fatOil": "Coconut milk",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Pesto sauce",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Tofu",
+        "fatOil": "Coconut milk",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Bell peppers",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Eggplant",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Brussels sprouts",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken wings",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mango",
+        "fatOil": "Coconut milk",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mango",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Onions",
+        "fatOil": "Butter",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Vegetable oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Spinach",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Carrots",
+        "fatOil": "Butter",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Cucumbers",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Potatoes",
+        "fatOil": "Olive oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Tomatoes",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Rice",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chickpeas",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Rice",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Potatoes",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Potatoes",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Potato",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Semolina",
+        "fatOil": "None",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Kidney beans",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed vegetables",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chickpeas",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Fermented batter",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mixed vegetables",
+        "fatOil": "Butter",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Basmati rice",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Rice",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Chickpeas",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Cauliflower",
+        "fatOil": "Oil",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Mutton",
+        "fatOil": "Ghee",
+        "allergens": "None"
+    },
+    {
+        "mainIngredient": "Oats",
+        "fatOil": "Milk",
+        "allergens": "Oats, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Peanut butter",
+        "allergens": "Peanuts"
+    },
+    {
+        "mainIngredient": "Peanuts",
+        "fatOil": "Vegetable oil",
+        "allergens": "Peanuts"
+    },
+    {
+        "mainIngredient": "Peanuts",
+        "fatOil": "Vegetable oil",
+        "allergens": "Peanuts"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Peanut oil",
+        "allergens": "Peanuts"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Peanut oil",
+        "allergens": "Peanuts"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "Pine nuts, Dairy"
+    },
+    {
+        "mainIngredient": "Zucchini",
+        "fatOil": "Olive oil",
+        "allergens": "Pine nuts, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "Pine nuts, Dairy"
+    },
+    {
+        "mainIngredient": "Rice",
+        "fatOil": "Milk",
+        "allergens": "Rice, Dairy"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Butter",
+        "allergens": "Shellfish"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Butter",
+        "allergens": "Shellfish"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Olive oil",
+        "allergens": "Shellfish"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Olive oil",
+        "allergens": "Shellfish"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Olive oil",
+        "allergens": "Shellfish"
+    },
+    {
+        "mainIngredient": "Prawns",
+        "fatOil": "Ghee",
+        "allergens": "Shellfish"
+    },
+    {
+        "mainIngredient": "Lobster",
+        "fatOil": "Butter",
+        "allergens": "Shellfish, Dairy"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Olive oil",
+        "allergens": "Shellfish, Dairy"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Butter",
+        "allergens": "Shellfish, Dairy"
+    },
+    {
+        "mainIngredient": "Lobster",
+        "fatOil": "Butter",
+        "allergens": "Shellfish, Dairy"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Olive oil",
+        "allergens": "Shellfish, Dairy"
+    },
+    {
+        "mainIngredient": "Prawns",
+        "fatOil": "Coconut milk",
+        "allergens": "Shellfish, Dairy"
+    },
+    {
+        "mainIngredient": "Lobster",
+        "fatOil": "Mayonnaise",
+        "allergens": "Shellfish, Eggs"
+    },
+    {
+        "mainIngredient": "Lobster",
+        "fatOil": "Mayonnaise",
+        "allergens": "Shellfish, Eggs"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Bacon",
+        "allergens": "Shellfish, Pork"
+    },
+    {
+        "mainIngredient": "Shrimp",
+        "fatOil": "Vegetable oil",
+        "allergens": "Shellfish, Soybeans"
+    },
+    {
+        "mainIngredient": "Soybeans",
+        "fatOil": "None",
+        "allergens": "Soybeans"
+    },
+    {
+        "mainIngredient": "Soybeans",
+        "fatOil": "None",
+        "allergens": "Soybeans"
+    },
+    {
+        "mainIngredient": "Tofu",
+        "fatOil": "Vegetable oil",
+        "allergens": "Soybeans"
+    },
+    {
+        "mainIngredient": "Miso paste",
+        "fatOil": "None",
+        "allergens": "Soybeans"
+    },
+    {
+        "mainIngredient": "Tofu",
+        "fatOil": "Vegetable oil",
+        "allergens": "Soybeans"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Soy sauce",
+        "allergens": "Soybeans"
+    },
+    {
+        "mainIngredient": "Tofu",
+        "fatOil": "Vegetable oil",
+        "allergens": "Soybeans"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Soy sauce",
+        "allergens": "Soybeans"
+    },
+    {
+        "mainIngredient": "Sushi rice",
+        "fatOil": "Soy sauce",
+        "allergens": "Soybeans, Fish"
+    },
+    {
+        "mainIngredient": "Wheat flour",
+        "fatOil": "None",
+        "allergens": "Wheat"
+    },
+    {
+        "mainIngredient": "Wheat flour",
+        "fatOil": "None",
+        "allergens": "Wheat"
+    },
+    {
+        "mainIngredient": "Zucchini",
+        "fatOil": "Vegetable oil",
+        "allergens": "Wheat"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Wheat"
+    },
+    {
+        "mainIngredient": "Onions",
+        "fatOil": "Vegetable oil",
+        "allergens": "Wheat"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Wheat"
+    },
+    {
+        "mainIngredient": "Portobello mushrooms",
+        "fatOil": "None",
+        "allergens": "Wheat"
+    },
+    {
+        "mainIngredient": "Potatoes",
+        "fatOil": "Ghee",
+        "allergens": "Wheat"
+    },
+    {
+        "mainIngredient": "Oats",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Oats",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Carrots",
+        "fatOil": "Vegetable oil",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Blueberries",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Arborio rice",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pineapple",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Bananas",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Bacon",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pumpkin",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Mixed berries",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Bread",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Mixed berries",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Cheese",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Cheese",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Lime juice",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Strawberries",
+        "fatOil": "Whipped cream",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Mixed berries",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Cream cheese",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Oats",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Enchilada sauce",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Romaine lettuce",
+        "fatOil": "Caesar dressing",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Romaine lettuce",
+        "fatOil": "Caesar dressing",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Graham crackers",
+        "fatOil": "Chocolate",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Ladyfingers",
+        "fatOil": "Mascarpone cheese",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Dough",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Caesar dressing",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Bread",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pizza dough",
+        "fatOil": "None",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Caesar dressing",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pumpkin",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pizza dough",
+        "fatOil": "None",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "None",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Enchilada sauce",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Romaine lettuce",
+        "fatOil": "Caesar dressing",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Graham crackers",
+        "fatOil": "Chocolate",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Ladyfingers",
+        "fatOil": "Mascarpone cheese",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Dough",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Caesar dressing",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Vegetables",
+        "fatOil": "Olive oil",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Bread",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pizza dough",
+        "fatOil": "None",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pasta",
+        "fatOil": "Caesar dressing",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Apples",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Chicken",
+        "fatOil": "Olive oil",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pumpkin",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Pizza dough",
+        "fatOil": "None",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Beef",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Ghee",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy"
+    },
+    {
+        "mainIngredient": "Ladyfingers",
+        "fatOil": "Mascarpone cheese, coffee liqueur",
+        "allergens": "Wheat, Dairy, Alcohol"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy, Cocoa"
+    },
+    {
+        "mainIngredient": "Flour",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy, Cocoa"
+    },
+    {
+        "mainIngredient": "Lemon juice",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy, Eggs"
+    },
+    {
+        "mainIngredient": "Lemon juice",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy, Eggs"
+    },
+    {
+        "mainIngredient": "Pecans",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy, Nuts"
+    },
+    {
+        "mainIngredient": "Zucchini",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy, Nuts"
+    },
+    {
+        "mainIngredient": "Bananas",
+        "fatOil": "Butter",
+        "allergens": "Wheat, Dairy, Nuts"
+    },
+    {
+        "mainIngredient": "Pizza dough",
+        "fatOil": "None",
+        "allergens": "Wheat, Pork, Dairy"
+    }
 ]
