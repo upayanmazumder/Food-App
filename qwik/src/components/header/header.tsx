@@ -1,42 +1,28 @@
+
+import ImgIconTransparent from '../../media/icon-transparent.png?jsx';
 import { component$ } from "@builder.io/qwik";
-import { QwikLogo } from "../icons/qwik";
 import styles from "./header.module.css";
 
 export default component$(() => {
   return (
     <header class={styles.header}>
-      <div class={["container", styles.wrapper]}>
-        <div class={styles.logo}>
-          <a href="/" title="qwik">
-            <QwikLogo height={50} width={143} />
-          </a>
+      <div class={styles.container}>
+        <div class={styles.logoContainer}>
+          <ImgIconTransparent alt="Food App" class={styles.logoImage} />
+          <h2 class={styles.logoText}>Food App</h2>
         </div>
-        <ul>
-          <li>
-            <a
-              href="https://qwik.dev/docs/components/overview/"
-              target="_blank"
-            >
-              Docs
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://qwik.dev/examples/introduction/hello-world/"
-              target="_blank"
-            >
-              Examples
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://qwik.dev/tutorial/welcome/overview/"
-              target="_blank"
-            >
-              Tutorials
-            </a>
-          </li>
-        </ul>
+        <nav class={styles.nav}>
+          <ul class={styles.navList}>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="https://github.com/upayanmazumder/File-Server" target='_blank'>
+                Repository
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
