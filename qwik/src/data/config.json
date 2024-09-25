@@ -2,6 +2,7 @@
     "companyDetails": {
         "companyName": "Fork Feed",
         "email": "support@upayan.space",
+        "phoneNumber": "+1-234-567-890",
         "address": {
             "street": "VIT",
             "city": "Vellore",
