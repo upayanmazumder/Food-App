@@ -22,12 +22,12 @@ export default component$(() => {
       <div role="presentation" class="ellipsis"></div>
 
       {isSignedIn ? (
-        <div class="container container-center container-spacing-xl">
+        <div class="container container-center">
           <h3>
             Your <span class="highlight">Profile</span>
           </h3>
           <br />
-
+          
           <div class={sessionStyles.userInfo}>
             <p>{session.value.user?.name}</p>
             <p>{session.value.user?.email}</p>
