@@ -1,4 +1,5 @@
 import { component$, useVisibleTask$, useStore, $ } from "@builder.io/qwik";
+import { useNavigate } from "@builder.io/qwik-city";
 import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 import { useSession } from '~/routes/plugin@auth';
 import styles from './allergens.module.css'; 
@@ -31,6 +32,8 @@ export default component$(() => {
     error: null,
     successMessage: null,
   });
+
+  const navigate = useNavigate(); // Use Qwik's navigate utility
 
   // Fetch allergens from the API
   useVisibleTask$(() => {
@@ -80,6 +83,9 @@ export default component$(() => {
         throw new Error('Failed to update allergens');
       }
       store.successMessage = 'Allergies updated successfully!';
+      
+      // Redirect to /recipes upon successful update
+      navigate('/recipes');
     } catch (error) {
       store.error = (error as Error).message;
     } finally {
