@@ -6,7 +6,7 @@ export const { onRequest, useSession, useSignIn, useSignOut } = QwikAuth$(
     providers: [
       Google({
         clientId: process.env.AUTH_GOOGLE_ID,
-        clientSecret: process.env.AUTH_SECRET_ID,
+        clientSecret: process.env.AUTH_GOOGLE_SECRET,
       }),
     ],
   }),
