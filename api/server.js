@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const authRoutes = require('./routes/auth');
+const allergensRoutes = require('./routes/allergens'); // Import new route
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
@@ -27,6 +28,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/api', authRoutes);
+app.use('/api', allergensRoutes); // Use the allergens routes
 
 // Error handling middleware
 app.use((err, req, res, next) => {

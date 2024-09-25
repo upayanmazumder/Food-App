@@ -7,55 +7,14 @@
 
 ## Basic Functions:
 - [ ] Task 0: Being able to sign in 
+- [ ] Task 0.5: Taking in input about any allergy of condtion throught which the user may be suffering through
 - [ ] Task 1: being able upload food recepies, along with sources for showing health benefits
 - [ ] Task 2: Being able to follow people, and their recepies.
-- [ ] Task 3: Letting the users know if the food is suitable if they suffer from some conditions
+- [ ] Task 3: Letting the users know if the food is suitable if they suffer from effected conditions 
 - [ ] Task 4: being able to follow poeple
-- [ ] Task 5: Able to upload videos, and photos of food people made, like insta stories 
+- [ ] Task 5: Able to upload photos of food people made, like insta stories 
 
 ## Exctra Functions: 
 - [ ] Task 1: Asking the uploader for alternative recepies, highlighting the indegridients that may needed to b changed 
 - [ ] Task 2: 
 
-// Function to get user input and suggest foods to avoid
-function getFoodRecommendations() {
-    // Prompt user for allergies and medical conditions
-    let allergies = prompt("Enter your food allergies (comma-separated):").split(",");
-    let conditions = prompt("Enter your medical conditions (comma-separated):").split(",");
-
-    // List of foods to avoid based on common allergies and conditions
-    let foodRecommendations = {
-        "peanut": ["Peanuts", "Peanut butter", "Peanut oil"],
-        "gluten": ["Wheat", "Barley", "Rye", "Oats"],
-        "lactose": ["Milk", "Cheese", "Butter", "Yogurt"],
-        "diabetes": ["Sugary foods", "High-carb foods", "Sugary drinks"],
-        "hypertension": ["Salty foods", "Processed foods", "Canned soups"]
-    };
-
-    // Initialize an empty array to store foods to avoid
-    let foodsToAvoid = [];
-
-    // Check allergies and conditions against the food recommendations
-    allergies.forEach(allergy => {
-        let trimmedAllergy = allergy.trim().toLowerCase();
-        if (foodRecommendations[trimmedAllergy]) {
-            foodsToAvoid = foodsToAvoid.concat(foodRecommendations[trimmedAllergy]);
-        }
-    });
-
-    conditions.forEach(condition => {
-        let trimmedCondition = condition.trim().toLowerCase();
-        if (foodRecommendations[trimmedCondition]) {
-            foodsToAvoid = foodsToAvoid.concat(foodRecommendations[trimmedCondition]);
-        }
-    });
-
-    // Remove duplicates from the foodsToAvoid array
-    foodsToAvoid = [...new Set(foodsToAvoid)];
-
-    // Display the foods to avoid
-    alert("Based on your input, you should avoid the following foods: " + foodsToAvoid.join(", "));
-}
-
-// Call the function to get recommendations
-getFoodRecommendations();

@@ -1,0 +1,244 @@
+[
+  {
+    "mainIngredient": "Almonds",
+    "sweetener": "Sugar",
+    "fatOil": "Butter",
+    "allergens": [
+      "Almonds",
+      "Wheat",
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Chicken broth",
+    "sweetener": "None",
+    "fatOil": "None",
+    "allergens": [
+      "Chicken",
+      "Wheat",
+      "Celery"
+    ]
+  },
+  {
+    "mainIngredient": "Cheese",
+    "sweetener": "None",
+    "fatOil": "None",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Buttermilk",
+    "sweetener": "Sugar",
+    "fatOil": "Vegetable oil",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Popcorn",
+    "sweetener": "Sugar",
+    "fatOil": "Butter",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Romaine lettuce",
+    "sweetener": "None",
+    "fatOil": "Olive oil",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Grilled chicken",
+    "sweetener": "None",
+    "fatOil": "Caesar dressing",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Strawberries",
+    "sweetener": "Honey",
+    "fatOil": "Yogurt (milk, cultures)",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Cheese",
+    "sweetener": "None",
+    "fatOil": "None",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Cheese",
+    "sweetener": "None",
+    "fatOil": "None",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Potatoes",
+    "sweetener": "None",
+    "fatOil": "Butter",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Yogurt (milk, cultures)",
+    "sweetener": "None",
+    "fatOil": "None",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Grilled chicken",
+    "sweetener": "None",
+    "fatOil": "Caesar dressing",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Tomatoes",
+    "sweetener": "None",
+    "fatOil": "Olive oil",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Mixed berries",
+    "sweetener": "Sugar",
+    "fatOil": "Yogurt (milk, cultures)",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Romaine lettuce",
+    "sweetener": "None",
+    "fatOil": "Olive oil",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Mixed berries",
+    "sweetener": "Sugar",
+    "fatOil": "Yogurt (milk, cultures)",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Chicken",
+    "sweetener": "None",
+    "fatOil": "Butter",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Pesto sauce",
+    "sweetener": "None",
+    "fatOil": "None",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Beef",
+    "sweetener": "None",
+    "fatOil": "Sour cream",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Bananas",
+    "sweetener": "Honey",
+    "fatOil": "Yogurt (milk, cultures)",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Watermelon",
+    "sweetener": "None",
+    "fatOil": "None",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Chicken",
+    "sweetener": "None",
+    "fatOil": "Bread crumbs, Parmesan cheese",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Mango",
+    "sweetener": "Sugar",
+    "fatOil": "Yogurt (milk, cultures)",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Cucumbers",
+    "sweetener": "None",
+    "fatOil": "Olive oil",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Butternut squash",
+    "sweetener": "None",
+    "fatOil": "Butter",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Pasta",
+    "sweetener": "None",
+    "fatOil": "Olive oil",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "mainIngredient": "Lamb",
+    "sweetener": "None",
+    "fatOil": "None",
+    "allergens": [
+      "Dairy"
+    ]
+  },
+  {
+    "email": "YOUR_EMAIL",
+    "allergens": [
+      "Allergen1",
+      "Allergen2"
+    ]
+  },
+  {
+    "email": "upayanm3@gmail.com",
+    "allergens": [
+      "wheat",
+      "Chicken"
+    ]
+  }
+]
