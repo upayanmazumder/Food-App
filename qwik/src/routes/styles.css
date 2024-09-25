@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background: var(--qwik-dark-background);
+  background-color: #8B4513;
   color: var(--qwik-dark-text);
   overflow-x: hidden;
 }
@@ -163,7 +163,7 @@ button.button-small {
     rgba(46, 55, 114, 0) 63.22%
   );
   transform: rotate(5deg);
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: -1;
 }
 .ellipsis.ellipsis-purple {
