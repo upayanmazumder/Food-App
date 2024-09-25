@@ -9,7 +9,7 @@ export default component$(() => {
       <div class={styles.container}>
         <div class={styles.logoContainer}>
           <ImgIconTransparent alt="Food App" class={styles.logoImage} />
-          <h2 class={styles.logoText}>Fork Life</h2>
+          <h2 class={styles.logoText}>Fork Feed</h2>
         </div>
         <nav class={styles.nav}>
           <ul class={styles.navList}>
