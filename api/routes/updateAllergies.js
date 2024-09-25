@@ -36,10 +36,14 @@ router.post('/update-allergies', async (req, res) => {
             return res.status(404).json({ error: 'User not found' });
         }
 
-        // Update the user's allergies
+        // Clear the user's allergies list by setting it to an empty array
+        await userSnapshot.ref.update({ allergies: [] });
+        console.log('Cleared allergies for email:', email);
+
+        // Update the user's allergies with the new values
         await userSnapshot.ref.update({ allergies });
         console.log('Allergies updated successfully for email:', email);
-        
+
         return res.status(200).json({ message: 'Allergies updated successfully' });
     } catch (error) {
         console.error('Error updating allergies:', error);
