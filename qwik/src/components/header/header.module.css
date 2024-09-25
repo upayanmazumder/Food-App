@@ -1,5 +1,5 @@
 :root {
-  --dark-tint: rgba(0, 0, 0, 0.7);
+  --dark-tint: rgba(3, 1, 18, 0.7);
   --accent-color: #4c8bf5;
   --text-color: #f0f0f0;
   --hover-accent: #357ae8;
@@ -12,31 +12,30 @@
 }
 
 .header {
-  background-color: var(--dark-tint);
+  background-color:#FF6347 ;
   padding: 1rem 0;
   color: var(--text-color);
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 2px solid #0b0302;
   width: 100%;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-left: 20px;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
 }
 
 .logoContainer {
+  margin-left:10px;
   display: flex;
   align-items: center;
 }
 
 .logoImage {
   margin-right: 0.75rem;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .logoText {
@@ -57,9 +56,9 @@
 }
 
 .navList li a {
-  color: var(--text-color);
+  color:#FFF8E1;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5em;
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -67,8 +66,8 @@
 }
 
 .navList li a:hover {
-  background-color: var(--accent-color);
-  color: #ffffff;
+  background-color:#FFF8E1;
+  color: #97220e;
 }
 
 .navList li a:focus {
@@ -97,4 +96,7 @@
   .navList li a {
     font-size: 1rem;
   }
+}
+.profileimg{width: 50px;
+  height: 50px;
 }
