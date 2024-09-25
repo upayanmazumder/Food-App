@@ -1,6 +1,6 @@
 const express = require('express');
 const { initializeApp } = require('firebase/app');
-const { getAuth, signInWithEmailAndPassword } = require('firebase/auth');
+const { getAuth, signInWithEmail } = require('firebase/auth');
 const firebaseConfig = require('../firebaseconfig.json');
 
 const router = express.Router();
@@ -9,9 +9,9 @@ const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 
 router.post('/', (req, res) => {
-    const { email, password } = req.body;
+    const { email } = req.body;
 
-    signInWithEmailAndPassword(auth, email, password)
+    signInWithEmail(auth, email)
     .then(() => {
         res.status(200).send({ success: true });
     })
