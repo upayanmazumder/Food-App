@@ -45,6 +45,8 @@ export default component$(() => {
           You must be signed in!
         </div>
       )}
+
+      <a href='/profile/allergens'>Allergens</a>
     </>
   );
 });

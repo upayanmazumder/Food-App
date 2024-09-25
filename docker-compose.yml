@@ -1,0 +1,6 @@
+services:
+  api:
+    image: ghcr.io/lucsoft/some-app
+    build: .
+    ports:
+      - "3000:3000"

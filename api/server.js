@@ -26,6 +26,11 @@ app.use(helmet()); // Secure the app by setting various HTTP headers
 app.use(morgan('dev')); // Log requests to the console
 app.use(bodyParser.json());
 
+// Default route to show API is working
+app.get('/', (req, res) => {
+  res.send('API is working!');
+});
+
 // Routes
 app.use('/api', authRoutes);
 app.use('/api', allergensRoutes); // Use the allergens routes
