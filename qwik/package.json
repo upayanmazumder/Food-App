@@ -32,6 +32,7 @@
     "@auth/qwik": "0.2.2",
     "@builder.io/qwik": "^1.9.0",
     "@builder.io/qwik-city": "^1.9.0",
+    "@qwikest/icons": "^0.0.13",
     "@types/eslint": "8.56.10",
     "@types/node": "20.14.11",
     "@typescript-eslint/eslint-plugin": "7.16.1",
@@ -41,9 +42,8 @@
     "prettier": "3.3.3",
     "typescript": "5.4.5",
     "undici": "*",
-    "vite": "5.3.5",
+    "vite": "^5.4.8",
     "vite-tsconfig-paths": "^4.2.1",
-    "@qwikest/icons": "^0.0.13",
     "wrangler": "^3.0.0"
   },
   "dependencies": {
