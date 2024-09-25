@@ -9,10 +9,10 @@
     box-shadow: #FFF8E1;
     width: fit-content;
     max-width: 300px; /* Smaller max-width */
-    margin-left: auto;
-    margin-right: 30px;
+    margin: auto 30px auto 0;
     text-align: center;
     background-color: #1919198a;
+    height: fit-content;
   }
   
   .imgContainer {
