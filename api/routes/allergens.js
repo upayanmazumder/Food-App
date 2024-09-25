@@ -16,8 +16,10 @@ const getUniqueAllergens = () => {
         });
     });
 
-    // Convert Set to Array and sort it alphabetically
-    return Array.from(allergensSet).sort();
+    // Convert Set to Array, filter out "None", and sort it alphabetically
+    return Array.from(allergensSet)
+        .filter(allergen => allergen !== 'None')
+        .sort();
 };
 
 // Route to get unique allergens
