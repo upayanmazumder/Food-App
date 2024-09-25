@@ -49,7 +49,7 @@
 .nav {
   display: flex;
   align-items: center;
-  margin-left: 350px;
+  margin-left: 100px;
 }
 
 .navList {
@@ -61,29 +61,23 @@
 }
 
 .navList li a {
+  display: flex;
+  text-wrap: nowrap;
   align-items: center;
   color:#FFF8E1;
   text-decoration: none;
   font-size: 1.75em;
-  font-weight: 750;
+  font-weight: 300;
   padding: 0.5rem 1rem;
   border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease, scale 0.5s ease;
 }
 .navList li {
-  transition: background-color 0.3s ease, color 0.3s ease, scale 0.5s ease;
+  transition: scale 0.3s ease;
 }
+
 .navList li:hover {
-  transform: scale(1.1);
-  color: #a71111;
-}
-.navList li a:hover{
-  background-color: #FFF8E1;
-  color: #a71111;
-}
-.navList li a:focus {
-  outline: 2px solid var(--hover-accent);
-  outline-offset: 3px;
+  scale: 1.1;
 }
 
 @media (max-width: 768px) {

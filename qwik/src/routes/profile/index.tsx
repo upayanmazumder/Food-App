@@ -3,6 +3,7 @@ import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 import { useSignOut, useSession } from '~/routes/plugin@auth';
 import sessionStyles from "../../components/auth/session/session.module.css";
 import { Form } from '@builder.io/qwik-city';
+import Infobox from "../../components/infobox/infobox";
 
 export const onRequest: RequestHandler = (event) => {
   const session = event.sharedMap.get("session");
@@ -28,15 +29,15 @@ export default component$(() => {
           </h3>
           <br />
           
-          <div class={sessionStyles.userInfo}>
-            <br></br>
-            <p id="p1">{session.value.user?.name}</p>
-            <br></br>
-            <p id="p2">{session.value.user?.email}</p>
-          </div>
+          <Infobox>
+            <div class={sessionStyles.userInfo}>
+              <p id="p1">{session.value.user?.name}</p>
+              <p id="p2">{session.value.user?.email}</p>
+            </div>
+          </Infobox>
 
           <br/>
-          <p ><a href='/profile/allergens' id="links">Allergens</a></p>
+          <p><a href='/profile/allergens' id="links">Set up Allergens ↪</a></p>
 
           <Form action={signOut} class={sessionStyles.form}>
             <input type="hidden" name="redirectTo" value="/a/signedout" />

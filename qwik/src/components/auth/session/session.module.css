@@ -8,7 +8,7 @@
     backdrop-filter: blur(10px);
     box-shadow: #FFF8E1;
     width: fit-content;
-    max-width: 300px; /* Smaller max-width */
+    max-width: 300px;
     margin: auto 30px auto 0;
     text-align: center;
     background-color: #1919198a;
@@ -33,9 +33,10 @@
   .userInfo {
     display: flex;
     flex-direction: column;
-    color: rgb(47, 45, 45);
+    color: rgb(255, 253, 253);
     flex-grow: 1;
     padding: 0 10px; 
+    font-size: small;
   }
   
   .userInfo p {
@@ -67,7 +68,7 @@
     background-color: #a71111;
     border: solid black;
     border-radius: 30px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
