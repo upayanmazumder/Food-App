@@ -1,16 +1,49 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useSignal, $, useTask$ } from '@builder.io/qwik';
 import { useSession, useSignIn } from '~/routes/plugin@auth';
 import sessionStyles from "./session.module.css";
 import { Form } from '@builder.io/qwik-city';
 import { BsGoogle } from "@qwikest/icons/bootstrap";
 import unknownPerson from "../../../media/authentication/unknown-person.png"
+
 export default component$(() => {
   const session = useSession();
   const signIn = useSignIn();
-
-
-  // Check if the user is signed in
   const isSignedIn = session.value?.user;
+
+  // Signal to hold the response or status after POST request
+  const signupStatus = useSignal<string>('Not yet signed up');
+
+  // Function to handle the POST request to /signup
+  const signup = $(async (email: string) => {
+    try {
+      const response = await fetch('http://localhost:3000/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+      if (response.ok) {
+        signupStatus.value = 'Signed up successfully!';
+      } else {
+        signupStatus.value = `Failed to sign up: ${response.status}`;
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        signupStatus.value = `Error: ${error.message}`;
+      } else {
+        signupStatus.value = 'An unknown error occurred';
+      }
+    }
+  });
+
+  // Trigger the signup task when user is signed in and has an email
+  useTask$(({ track }) => {
+    const email = track(() => session.value?.user?.email);
+    if (email) {
+      signup(email);
+    }
+  });
 
   return (
     <div class={sessionStyles.container}>
@@ -18,13 +51,13 @@ export default component$(() => {
         <>
           <a href="/profile">
             <div class={sessionStyles.imgContainer}>
-              <img 
+              <img
                 class={sessionStyles.img}
-                src={session.value.user?.image ?? unknownPerson} 
-                loading="lazy"  
-                alt={session.value.user?.name ?? 'User Icon'} 
-                width="80" 
-                height="80" 
+                src={session.value.user?.image ?? unknownPerson}
+                loading="lazy"
+                alt={session.value.user?.name ?? 'User Icon'}
+                width="80"
+                height="80"
               />
             </div>
           </a>
@@ -32,8 +65,9 @@ export default component$(() => {
             <p>{session.value.user?.name}</p>
             <p>{session.value.user?.email}</p>
           </div>
-          
-
+          <div class={sessionStyles.signupStatus}>
+            <p>{signupStatus.value}</p>
+          </div>
         </>
       ) : (
         <Form action={signIn} class={sessionStyles.form}>
