@@ -12,13 +12,13 @@ router.post('/auth', async (req, res) => {
 
     if (!email) {
         console.log('Auth failed: Email is required');
-        return res.status(400).json({ message: 'Email is required' });
+        return res.status(400).json({ error: 'Email is required' });
     }
 
     // Validate email format
     if (!isEmail(email)) {
         console.log('Auth failed: Invalid email format:', email);
-        return res.status(400).json({ message: 'Invalid email format' });
+        return res.status(400).json({ error: 'Invalid email format' });
     }
 
     try {
@@ -38,7 +38,7 @@ router.post('/auth', async (req, res) => {
         }
     } catch (error) {
         console.error('Error during authentication:', error);
-        return res.status(500).json({ message: 'Error during authentication', error });
+        return res.status(500).json({ error: 'Error during authentication', details: error.message });
     }
 });
 

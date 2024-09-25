@@ -8,7 +8,7 @@ export default component$(() => {
       <ImgThunder class={styles["hero-image"]} alt="Image thunder" />
       <div class="container container-center container-spacing-xl">
         <h3>
-          Connect with<span class="highlight">Flavour</span>
+          Connect with
         </h3>
       </div>
     </div>
