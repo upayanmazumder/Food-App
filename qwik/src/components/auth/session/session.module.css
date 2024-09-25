@@ -32,9 +32,8 @@
   .userInfo {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: rgb(47, 45, 45);
     flex-grow: 1;
-    overflow: hidden;
     padding: 0 10px; 
   }
   
@@ -45,6 +44,7 @@
   }
   
   .email {
+    font-size: 1rem;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -52,6 +52,7 @@
   }
   
   .form {
+    font-size: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,18 +60,19 @@
   }
   
   .button {
-    background-color: rgba(56, 16, 16, 0.2);
-    color: white;
-    padding: 5px; /* Smaller button */
-    border: none;
-    border-radius: 5px;
-    font-size: 0.8rem;
+    padding: 10px 15px;
+    margin: 3%;
+    color:#FFF8E1;
+    background-color: #a71111;
+    border: solid black;
+    border-radius: 30px;
+    font-size: 2.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .button:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(193, 6, 6, 0.4);
   }
   
   .iconButton {

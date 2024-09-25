@@ -29,11 +29,14 @@ export default component$(() => {
           <br />
           
           <div class={sessionStyles.userInfo}>
-            <p>{session.value.user?.name}</p>
-            <p>{session.value.user?.email}</p>
+            <br></br>
+            <p id="p1">{session.value.user?.name}</p>
+            <br></br>
+            <p id="p2">{session.value.user?.email}</p>
           </div>
 
           <br/>
+          <p ><a href='/profile/allergens' id="links">Allergens</a></p>
 
           <Form action={signOut} class={sessionStyles.form}>
             <input type="hidden" name="redirectTo" value="/a/signedout" />
@@ -45,8 +48,6 @@ export default component$(() => {
           You must be signed in!
         </div>
       )}
-
-      <a href='/profile/allergens'>Allergens</a>
     </>
   );
 });
