@@ -14,13 +14,13 @@
   position: absolute;
   height: auto;
   object-fit: cover;
-  z-index: -1;
+  z-index: -8;
   opacity: 0.4;
   pointer-events: none;
 }
 
 .hero p {
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 0;
   font-size: 1rem;
 }
