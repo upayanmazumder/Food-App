@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  color: #333333;
+}
+
 /* HEADINGS ------------------------------------- */
 h1,
 h2{

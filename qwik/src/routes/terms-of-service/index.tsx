@@ -8,6 +8,7 @@ export default component$(() => {
     <>
       <div class="container container-center container-spacing-xl">
         <h3>Terms of Service</h3>
+        <br />
         <p>Please read our terms of service carefully before using our website!</p>
       </div>
 
@@ -64,7 +65,7 @@ export default component$(() => {
           </div>
           <>
             <p>
-              If you have any questions about these Terms, please contact us at <a href="mailto:support@company.com">support@company.com</a>
+              If you have any questions about these Terms, please contact us at <a href="mailto:support@upayan.space">support@upayan.space</a>
             </p>
           </>
         </Infobox>

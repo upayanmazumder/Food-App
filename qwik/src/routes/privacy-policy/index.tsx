@@ -8,6 +8,7 @@ export default component$(() => {
     <>
       <div class="container container-center container-spacing-xl">
         <h3>Privacy Policy</h3>
+        <br />
         <p>Please go through our privacy policy carefully!</p>
       </div>
 

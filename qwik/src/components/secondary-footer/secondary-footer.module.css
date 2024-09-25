@@ -13,6 +13,10 @@
   margin: 0 auto;
 }
 
+p {
+  color:#a1a3a5 !important; 
+}
+
 .title {
   font-size: 20px;
   font-weight: bold;
@@ -47,11 +51,12 @@ li {
 .address {
   margin-top: 0px;
   font-size: 14px;
-  color: #666;
+
 }
 
 .address p {
   margin: 3px 0;
+  color: #afafaf;
 }
 
 .phone, .website {
@@ -87,7 +92,7 @@ li {
 }
 
 .socialIcon {
-  color: #495057;
+  color: #b2b3b4;
   font-size: 24px;
   transition: color 0.2s ease;
 }
