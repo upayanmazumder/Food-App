@@ -16,6 +16,7 @@
   }
   
   .imgContainer {
+    background-color: transparent;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;

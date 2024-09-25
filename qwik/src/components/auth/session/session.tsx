@@ -44,7 +44,7 @@ export default component$(() => {
             </div>
           </a>
           <div class={sessionStyles.userInfo}>
-            <p>{session.value.user?.name}</p>
+            <p id=''>{session.value.user?.name}</p>
             <p>{session.value.user?.email}</p>
           </div>
         </>
