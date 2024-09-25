@@ -1,13 +1,8 @@
 import { QwikAuth$ } from "@auth/qwik";
-import Google from "@auth/qwik/providers/google";
+import GitHub from "@auth/qwik/providers/github";
 
 export const { onRequest, useSession, useSignIn, useSignOut } = QwikAuth$(
   () => ({
-    providers: [
-      Google({
-        clientId: process.env.AUTH_GOOGLE_ID,
-        clientSecret: process.env.AUTH_GOOGLE_SECRET,
-      }),
-    ],
+    providers: [GitHub],
   }),
 );
