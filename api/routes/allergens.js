@@ -1,39 +1,33 @@
 const express = require('express');
-const admin = require('firebase-admin');
-const { isEmail } = require('validator');
+const fs = require('fs');
+const path = require('path');
 
 const router = express.Router();
 
-// Update Allergy Conditions Route
-router.put('/allergens', async (req, res) => {
-    const { email, allergens } = req.body;
+// Helper function to get unique allergens
+const getUniqueAllergens = () => {
+    const allergensData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/allergens.json'), 'utf8'));
+    const allergensSet = new Set();
 
-    console.log('Received allergens update request:', req.body);
+    allergensData.forEach(item => {
+        // Split the allergens string and add each one to the Set
+        item.allergens.split(', ').forEach(allergen => {
+            allergensSet.add(allergen);
+        });
+    });
 
-    if (!email) {
-        console.log('Update failed: Email is required');
-        return res.status(400).json({ error: 'Email is required' });
-    }
+    // Convert Set to Array and sort it alphabetically
+    return Array.from(allergensSet).sort();
+};
 
-    // Validate email format
-    if (!isEmail(email)) {
-        console.log('Update failed: Invalid email format:', email);
-        return res.status(400).json({ error: 'Invalid email format' });
-    }
-
-    if (!Array.isArray(allergens)) {
-        console.log('Update failed: Allergens must be an array');
-        return res.status(400).json({ error: 'Allergens must be an array' });
-    }
-
+// Route to get unique allergens
+router.get('/allergens', (req, res) => {
     try {
-        // Update user's allergens in Firestore
-        await admin.firestore().collection('users').doc(email).set({ allergens }, { merge: true });
-        console.log('Allergy conditions updated successfully for email:', email);
-        return res.status(200).json({ message: 'Allergy conditions updated successfully' });
+        const uniqueAllergens = getUniqueAllergens();
+        res.status(200).json({ allergens: uniqueAllergens });
     } catch (error) {
-        console.error('Error updating allergy conditions:', error);
-        return res.status(500).json({ error: 'Error updating allergy conditions', details: error.message });
+        console.error('Error retrieving allergens:', error);
+        res.status(500).json({ error: 'Error retrieving allergens', details: error.message });
     }
 });
 
