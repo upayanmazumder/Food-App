@@ -4,43 +4,19 @@ import sessionStyles from "./session.module.css";
 import { Form } from '@builder.io/qwik-city';
 import { BsGoogle } from "@qwikest/icons/bootstrap";
 import unknownPerson from "../../../media/authentication/unknown-person.png";
-import config from "../../../data/config.json"
+import { signupUser } from '../../../shared/auth';
 
 export default component$(() => {
   const session = useSession();
   const signIn = useSignIn();
   const isSignedIn = session.value?.user;
-  const domain = config.apiAddress;
 
   // Signal to hold the response or status after POST request
   const signupStatus = useSignal<string>('Not yet signed up');
 
-  // Function to handle the POST request to /api/auth
+  // Function to handle signup
   const signup = $(async (email: string) => {
-    try {
-      const response = await fetch(`${domain}/api/auth`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (response.ok) {
-        signupStatus.value = 'Signed up successfully!';
-      } else {
-        signupStatus.value = `Failed to sign up: ${response.status}`;
-      }
-    } catch (error) {
-      // Check for network error and set message accordingly
-      if (error instanceof TypeError) {
-        signupStatus.value = 'bruh'; // API is down or network error
-      } else if (error instanceof Error) {
-        signupStatus.value = `Error: ${error.message}`;
-      } else {
-        signupStatus.value = 'An unknown error occurred';
-      }
-    }
+    signupStatus.value = await signupUser(email);
   });
 
   // Trigger the signup task when the component mounts and user has an email
@@ -76,7 +52,7 @@ export default component$(() => {
         <Form action={signIn} class={sessionStyles.form}>
           <input type="hidden" name="providerId" value="google" />
           <input type="hidden" name="options.redirectTo" value="/a/signedin" />
-          <button class={sessionStyles.iconButton} >
+          <button class={sessionStyles.iconButton}>
             <BsGoogle />
           </button>
         </Form>
