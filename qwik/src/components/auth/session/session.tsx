@@ -4,7 +4,6 @@ import sessionStyles from "./session.module.css";
 import { Form } from '@builder.io/qwik-city';
 import { BsGoogle } from "@qwikest/icons/bootstrap";
 import unknownPerson from "../../../media/authentication/unknown-person.png";
-import { signupUser } from '../../../shared/auth';
 
 export default component$(() => {
   const session = useSession();
@@ -16,7 +15,29 @@ export default component$(() => {
 
   // Function to handle signup
   const signup = $(async (email: string) => {
-    signupStatus.value = await signupUser(email);
+    try {
+      const response = await fetch(`http://food-app-api.upayan.space/api/auth`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        signupStatus.value = 'Signed up successfully!';
+      } else {
+        signupStatus.value = `Failed to sign up: ${response.status}`;
+      }
+    } catch (error) {
+      if (error instanceof TypeError) {
+        signupStatus.value = 'API is down or network error';
+      } else if (error instanceof Error) {
+        signupStatus.value = `Error: ${error.message}`;
+      } else {
+        signupStatus.value = 'An unknown error occurred';
+      }
+    }
   });
 
   // Trigger the signup task when the component mounts and user has an email
@@ -44,8 +65,9 @@ export default component$(() => {
             </div>
           </a>
           <div class={sessionStyles.userInfo}>
-            <p id=''>{session.value.user?.name}</p>
+            <p>{session.value.user?.name}</p>
             <p>{session.value.user?.email}</p>
+            <p>{signupStatus.value}</p> {/* Display the signup status */}
           </div>
         </div>
       ) : (

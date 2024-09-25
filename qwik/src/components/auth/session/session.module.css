@@ -21,6 +21,12 @@
     overflow: hidden;
     margin-right: 10px;
     flex-shrink: 0;
+    border: rgba(255, 255, 255, 0) 5px solid;
+    transition: border 0.3s ease;
+  }
+
+  .imgContainer:hover {
+    border: rgba(255, 255, 255, 0.634) 5px solid;
   }
   
   .img {
