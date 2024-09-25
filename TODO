@@ -5,16 +5,17 @@
 - [ ] Task 1: Front End
 - [ ] Task 2: Back End
 
-## Medium Priority
-
+## Basic Functions:
+- [ ] Task 0: Being able to sign in 
 - [ ] Task 1: being able upload food recepies, along with sources for showing health benefits
 - [ ] Task 2: Being able to follow people, and their recepies.
 - [ ] Task 3: Letting the users know if the food is suitable if they suffer from some conditions
 - [ ] Task 4: being able to follow poeple
 - [ ] Task 5: Able to upload videos, and photos of food people made, like insta stories 
 
-
-logic function for backend
+## Exctra Functions: 
+- [ ] Task 1: Asking the uploader for alternative recepies, highlighting the indegridients that may needed to b changed 
+- [ ] Task 2: 
 
 // Function to get user input and suggest foods to avoid
 function getFoodRecommendations() {

@@ -2,7 +2,7 @@
 import ImgIconTransparent from '../../media/icon-transparent.png?jsx';
 import { component$ } from "@builder.io/qwik";
 import styles from "./header.module.css";
-
+import Sessions from "../auth/session/session"
 export default component$(() => {
   return (
     <header class={styles.header}>
@@ -15,11 +15,10 @@ export default component$(() => {
           <ul class={styles.navList}>
             <li> <a href="/">Home</a></li>
             <li> <a href='/recipes'>Recipes</a></li>
-            <li><a href='/upload'>Flavour Flash</a></li>
-            <li id="profile"><a href="/profile">Profile</a></li>
-          
+            <li><a href='/upload'>Flavour Flash</a></li>          
           </ul>
         </nav>
+        <Sessions />
       </div>
     </header>
   );

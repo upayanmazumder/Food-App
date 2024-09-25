@@ -4,11 +4,13 @@ import sessionStyles from "./session.module.css";
 import { Form } from '@builder.io/qwik-city';
 import { BsGoogle } from "@qwikest/icons/bootstrap";
 import unknownPerson from "../../../media/authentication/unknown-person.png";
+import config from "../../../data/config.json"
 
 export default component$(() => {
   const session = useSession();
   const signIn = useSignIn();
   const isSignedIn = session.value?.user;
+  const domain = config.apiAddress;
 
   // Signal to hold the response or status after POST request
   const signupStatus = useSignal<string>('Not yet signed up');
@@ -16,7 +18,7 @@ export default component$(() => {
   // Function to handle the POST request to /api/auth
   const signup = $(async (email: string) => {
     try {
-      const response = await fetch('http://localhost:3000/api/auth', {
+      const response = await fetch(`${domain}/api/auth`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
