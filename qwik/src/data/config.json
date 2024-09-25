@@ -1,0 +1,23 @@
+{
+    "companyDetails": {
+        "companyName": "Fork Feed",
+        "email": "support@upayan.space",
+        "address": {
+            "street": "VIT",
+            "city": "Vellore",
+            "state": "Tamil Nadu",
+            "zipCode": "632014",
+            "country": "India"
+        },
+        "website": "www.upayan.space"
+    },
+    "socialMediaHandles": {
+        "instagram": "https://www.instagram.com/_._upayan_._/",
+        "youtube": "",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/upayanmazumder/",
+        "github": "https://github.com/upayanmazumder/",
+        "facebook": "https://www.facebook.com/upayan.mazumder/"
+    }
+  }
+  
