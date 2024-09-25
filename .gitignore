@@ -3,3 +3,4 @@ node_modules
 api/app.log
 api/logs.log
 .env
+api/firebaseconfig.json
