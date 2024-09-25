@@ -61,8 +61,11 @@ export default component$(() => {
   });
 
   // Submit the selected allergens to the API
-  const submitAllergens = $(async () => {
+  const submitAllergens = $(async (event: any) => {
     store.loading = true;
+    const session = event.sharedMap.get("session"); // Get session email here
+    const email = session?.email; // Extract the email
+  
     try {
       const response = await fetch('https://food-app-api.upayan.space/api/update-allergies', {
         method: 'POST',
@@ -70,7 +73,7 @@ export default component$(() => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email: 'upayanm3@gmail.com',
+          email: email, // Use the session email
           allergies: store.selectedAllergies,
         }),
       });
