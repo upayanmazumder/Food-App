@@ -1,5 +1,6 @@
 import { component$, useVisibleTask$, useStore, $ } from "@builder.io/qwik";
 import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
+import { useSession } from '~/routes/plugin@auth';
 import styles from './allergens.module.css'; 
 
 interface AllergenResponse {
@@ -22,6 +23,7 @@ export const onRequest: RequestHandler = (event) => {
 };
 
 export default component$(() => {
+  const session = useSession();
   const store = useStore<AllergenStore>({
     allergens: [],
     selectedAllergies: [],
@@ -61,11 +63,8 @@ export default component$(() => {
   });
 
   // Submit the selected allergens to the API
-  const submitAllergens = $(async (event: any) => {
+  const submitAllergens = $(async () => {
     store.loading = true;
-    const session = event.sharedMap.get("session"); // Get session email here
-    const email = session?.email; // Extract the email
-  
     try {
       const response = await fetch('https://food-app-api.upayan.space/api/update-allergies', {
         method: 'POST',
@@ -73,7 +72,7 @@ export default component$(() => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email: email, // Use the session email
+          email: session.value?.user?.email,
           allergies: store.selectedAllergies,
         }),
       });
