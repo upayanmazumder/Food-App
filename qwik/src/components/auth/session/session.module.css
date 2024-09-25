@@ -3,11 +3,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.5); /* Tinted black glass effect */
     border-radius: 15px;
     padding: 10px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: #FFF8E1;
     width: fit-content;
     max-width: 300px; /* Smaller max-width */
     margin-left: auto;
@@ -59,7 +58,7 @@
   }
   
   .button {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(56, 16, 16, 0.2);
     color: white;
     padding: 5px 10px; /* Smaller button */
     border: none;
@@ -75,7 +74,7 @@
   }
   
   .iconButton {
-    background-color: #4284f4;
+    background-color:#1DA1F2;
     border-radius: 50%;
     border: none;
     cursor: pointer;

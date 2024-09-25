@@ -7,7 +7,7 @@ export default component$(() => {
     <footer>
       <div class="container">
         <a class={styles.anchor}>
-          <span>Made with ♡ by Byte Me</span>
+          <span></span>
         </a>
       </div>
     </footer>
