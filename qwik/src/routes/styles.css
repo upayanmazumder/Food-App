@@ -181,13 +181,13 @@ button.button-small {
 @media screen and (min-width: 768px) {
   .ellipsis {
     top: -100px;
-    left: 350px;
-    width: 1400px;
+    right: 500px;
+    width: 2500px;
     height: 800px;
   }
   .ellipsis.ellipsis-purple {
     top: 1300px;
-    left: -200px;
+    left: -800px;
   }
 }
 

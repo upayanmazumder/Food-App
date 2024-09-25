@@ -1,8 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
-import { useSignOut, useSession } from '~/routes/plugin@auth';
-import sessionStyles from "../../components/auth/session/session.module.css";
-import { Form } from '@builder.io/qwik-city';
 import Allergens from "../../../components/allergens/allergens"
 
 export const onRequest: RequestHandler = (event) => {

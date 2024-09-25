@@ -2,8 +2,10 @@ from node
 
 workdir /app
 
-copy . .
+copy package*.json ./
 
 run npm ci
+
+copy . .
 
 cmd ["npm", "run", "api"]
