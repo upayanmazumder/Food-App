@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   margin-left: 20px;
-  max-width: 1200px;
+
 }
 
 .logoContainer {
@@ -39,6 +39,8 @@
 }
 
 .logoText {
+  align-items: center;
+  margin: auto;
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--text-color);
@@ -47,29 +49,38 @@
 .nav {
   display: flex;
   align-items: center;
+  margin-left: 500px;
 }
 
 .navList {
+  align-items: center;
+  justify-content:space-between;
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
 .navList li a {
+  align-items: center;
   color:#FFF8E1;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease, scale 0.5s ease;
 }
-
-.navList li a:hover {
-  background-color:#FFF8E1;
-  color: #97220e;
+.navList li {
+  transition: background-color 0.3s ease, color 0.3s ease, scale 0.5s ease;
 }
-
+.navList li:hover {
+  transform: scale(1.1);
+  color: #a71111;
+}
+.navList li a:hover{
+  background-color: #FFF8E1;
+  color: #a71111;
+}
 .navList li a:focus {
   outline: 2px solid var(--hover-accent);
   outline-offset: 3px;
@@ -94,9 +105,11 @@
   }
 
   .navList li a {
+    align-items: center;
     font-size: 1rem;
   }
 }
-.profileimg{width: 50px;
-  height: 50px;
+#profileimg{
+  margin-top: 50%;
 }
+

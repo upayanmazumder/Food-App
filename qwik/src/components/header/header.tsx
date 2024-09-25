@@ -17,8 +17,10 @@ export default component$(() => {
             <li> <a href='/recipes'>Recipes</a></li>
             <li><a href='/upload'>Flavour Flash</a></li>          
           </ul>
+         
         </nav>
         <Sessions />
+        
       </div>
     </header>
   );

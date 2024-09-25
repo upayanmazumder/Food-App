@@ -76,7 +76,7 @@ export default component$(() => {
         <Form action={signIn} class={sessionStyles.form}>
           <input type="hidden" name="providerId" value="google" />
           <input type="hidden" name="options.redirectTo" value="/a/signedin" />
-          <button class={sessionStyles.iconButton}>
+          <button class={sessionStyles.iconButton} >
             <BsGoogle />
           </button>
         </Form>
