@@ -1,7 +1,7 @@
 const express = require('express');
 const { initializeApp } = require('firebase/app');
 const { getAuth, signInWithEmail } = require('firebase/auth');
-const firebaseConfig = require('../firebaseconfig.json');
+const firebaseConfig = require('../../firebaseconfig.json');
 
 const router = express.Router();
 
