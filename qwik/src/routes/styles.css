@@ -172,7 +172,7 @@ button.button-small {
   left: -100px;
   background: radial-gradient(
     50% 50% at 50% 50%,
-    rgba(172, 127, 244, 0.5) 0%,
+    rgba(143, 5, 5, 0.5) 0%,
     rgba(171, 174, 186, 0) 100%
   );
   transform: rotate(-5deg);
