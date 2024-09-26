@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const authRoutes = require('./routes/auth');
 const allergensRoutes = require('./routes/allergens');
 const updateAllergiesRoutes = require('./routes/updateAllergies');
+const createPostRoutes = require('./routes/createPost');
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.get('/', (req, res) => {
 app.use('/api', authRoutes);
 app.use('/api', allergensRoutes);
 app.use('/api', updateAllergiesRoutes);
+app.use('/api', createPostRoutes); // Add createpost route
 
 // Error handling middleware
 app.use((err, req, res, next) => {
