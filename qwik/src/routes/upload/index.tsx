@@ -1,16 +1,20 @@
 import { component$, useSignal, $ } from '@builder.io/qwik';
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { useSession } from '~/routes/plugin@auth';
 
 export default component$(() => {
   const title = useSignal('');
   const description = useSignal('');
-  const fileName = useSignal<string | null>(null); // Hold file name instead of the File object
+  const session = useSession();
+  const email = useSignal(session.value?.user?.email);
+  const fileName = useSignal<string | null>(null);
 
   const handleSubmit = $(async (event: Event) => {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default form submission behavior
 
     // Create FormData object to send with the POST request
     const formData = new FormData();
+    formData.append('email', email.value || '');
     formData.append('title', title.value);
     formData.append('description', description.value);
 
@@ -26,7 +30,7 @@ export default component$(() => {
     }
 
     try {
-      const response = await fetch('https://food-app-api.upayan.space/api/createpost', {
+      const response = await fetch('http://food-app-api.upayan.space/api/createpost', {
         method: 'POST',
         body: formData,
       });
@@ -36,6 +40,7 @@ export default component$(() => {
         // Clear the form after successful submission
         title.value = '';
         description.value = '';
+        email.value = 'upayanm3@gmail.com'; // Reset email to default
         fileName.value = null; // Clear the file name
       } else {
         alert('Failed to create post.');
