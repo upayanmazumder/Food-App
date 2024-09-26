@@ -16,6 +16,12 @@
     padding: 0;
     margin: 2rem 0;
   }
+
+  .userAllergy {
+    background-color: lightblue; /* Example color */
+    border: 2px solid blue; /* Example border */
+  }
+  
   
   .button {
     background-color: white;
