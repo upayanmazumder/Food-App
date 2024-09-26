@@ -28,8 +28,8 @@ export default component$(() => {
           </div>
           <br></br>
           <br></br>
-          <div>
-          <address class={secFooterStyles.address}>
+          <div class={secFooterStyles.address}>
+          <address >
             <p>{companyDetails.companyName}</p>
             <p>{companyDetails.address.street}</p>
             <p>{companyDetails.address.city}, {companyDetails.address.state}, {companyDetails.address.zipCode}</p>
@@ -51,8 +51,8 @@ export default component$(() => {
         <div class={secFooterStyles.boxSupport}>
           <p class={secFooterStyles.title}>Support</p>
           <div class={secFooterStyles.emailWrapper}>
-            <p class={secFooterStyles.p}>Reach out to: 
-              <a href={`mailto:${companyDetails.email}`} class={secFooterStyles.email}>
+            <p class={secFooterStyles.p}>Reach out to : 
+              <a href={`mailto:${ companyDetails.email}`} class={secFooterStyles.email}>
                 {companyDetails.email}
               </a>
             </p>
