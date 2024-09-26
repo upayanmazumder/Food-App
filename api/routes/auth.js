@@ -1,10 +1,9 @@
 const express = require('express');
-const admin = require('../firebaseAdmin'); // Import centralized admin instance
+const admin = require('../firebaseAdmin');
 const { isEmail } = require('validator');
 
 const router = express.Router();
 
-// Single Auth Route
 router.post('/auth', async (req, res) => {
     const { email } = req.body;
 
@@ -15,22 +14,18 @@ router.post('/auth', async (req, res) => {
         return res.status(400).json({ error: 'Email is required' });
     }
 
-    // Validate email format
     if (!isEmail(email)) {
         console.log('Auth failed: Invalid email format:', email);
         return res.status(400).json({ error: 'Invalid email format' });
     }
 
     try {
-        // Check if user exists in Firestore
         const userSnapshot = await admin.firestore().collection('users').doc(email).get();
 
         if (userSnapshot.exists) {
-            // If user exists, log them in
             console.log('Login successful for email:', email);
             return res.status(200).json({ message: 'Login successful', user: userSnapshot.data() });
         } else {
-            // If user doesn't exist, sign them up
             console.log('Signing up new user with email:', email);
             await admin.firestore().collection('users').doc(email).set({ email });
             console.log('User registered successfully with email:', email);

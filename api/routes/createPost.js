@@ -1,16 +1,15 @@
 const express = require('express');
-const admin = require('../firebaseAdmin'); // Import centralized Firebase Admin SDK
+const admin = require('../firebaseAdmin');
 const multer = require('multer');
 const path = require('path');
-const { v4: uuidv4 } = require('uuid'); // For generating unique filenames
+const { v4: uuidv4 } = require('uuid');
 
 const router = express.Router();
 
-// Set up multer for image uploads (store in memory to upload to Firebase directly)
 const storage = multer.memoryStorage();
 const upload = multer({
   storage: storage,
-  limits: { fileSize: 5 * 1024 * 1024 }, // Limit file size to 5MB
+  limits: { fileSize: 5 * 1024 * 1024 },
   fileFilter: function (req, file, cb) {
     const fileTypes = /jpeg|jpg|png/;
     const extname = fileTypes.test(path.extname(file.originalname).toLowerCase());
@@ -23,28 +22,23 @@ const upload = multer({
   },
 });
 
-// POST route for creating a new post
 router.post('/createpost', upload.single('image'), async (req, res) => {
   const { email, title, description } = req.body;
 
-  // Validate title, description, and email
   if (!email || !title || !description) {
     return res.status(400).json({ error: 'Email, title, and description are required' });
   }
 
-  // Check if image file is uploaded
   if (!req.file) {
     return res.status(400).json({ error: 'Image file is required' });
   }
 
   try {
-    // Generate a unique filename for the image
     const fileName = `${uuidv4()}${path.extname(req.file.originalname)}`;
 
-    // Create a reference to Firebase Storage
+
     const bucket = admin.storage().bucket();
 
-    // Upload the image to Firebase Storage
     const file = bucket.file(`posts/${fileName}`);
     await file.save(req.file.buffer, {
       metadata: {
@@ -52,19 +46,16 @@ router.post('/createpost', upload.single('image'), async (req, res) => {
       },
     });
 
-    // Make the file publicly accessible and get its URL
     await file.makePublic();
     const imageUrl = `https://storage.googleapis.com/${bucket.name}/posts/${fileName}`;
 
-    // Create a new post object
     const newPost = {
       title,
       description,
-      imageUrl, // Firebase Storage URL
-      createdAt: new Date().toISOString(), // Use a simple timestamp instead
+      imageUrl,
+      createdAt: new Date().toISOString(),
     };
 
-    // Save the post data to the user's document
     const userDocRef = admin.firestore().collection('users').doc(email);
     await userDocRef.set({ posts: admin.firestore.FieldValue.arrayUnion(newPost) }, { merge: true });
 
