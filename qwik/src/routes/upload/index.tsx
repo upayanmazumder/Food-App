@@ -1,28 +1,37 @@
 import { component$, useSignal, $ } from '@builder.io/qwik';
-import type { DocumentHead } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 import { useSession } from '~/routes/plugin@auth';
-import styles from './upload.module.css';
+import styles from "./upload.module.css"
+
+export const onRequest: RequestHandler = (event) => {
+  const session = event.sharedMap.get("session");
+  if (!session || new Date(session.expires) < new Date()) {
+    throw event.redirect(302, `/a/notsignedin/`);
+  }
+};
 
 export default component$(() => {
   const title = useSignal('');
-  const description = useSignal('');
   const session = useSession();
+  const description = useSignal('');
   const email = useSignal(session.value?.user?.email);
   const fileName = useSignal<string | null>(null);
 
   const handleSubmit = $(async (event: Event) => {
     event.preventDefault();
 
+    // Create FormData object to send with the POST request
     const formData = new FormData();
-    formData.append('email', email.value || '');
+    formData.append('email', email.value || ''); 
     formData.append('title', title.value);
     formData.append('description', description.value);
 
+    // Get the file input element directly
     const fileInput = document.getElementById('image') as HTMLInputElement;
-    const selectedFile = fileInput.files?.[0];
+    const selectedFile = fileInput.files?.[0]; 
 
     if (selectedFile) {
-      formData.append('image', selectedFile);
+      formData.append('image', selectedFile); 
     } else {
       alert('Please select an image to upload.');
       return;
@@ -36,9 +45,10 @@ export default component$(() => {
 
       if (response.ok) {
         alert('Post created successfully!');
+
         title.value = '';
         description.value = '';
-        email.value = '';
+        email.value = ''; 
         fileName.value = null;
       } else {
         alert('Failed to create post.');
@@ -51,12 +61,13 @@ export default component$(() => {
 
   const handleFileChange = $(async (event: Event) => {
     const target = event.target as HTMLInputElement;
+
     fileName.value = target.files?.[0]?.name || null;
   });
 
   return (
-    <div class={styles['create-post-container']}>
-      <h2 class={styles.h2}>Post a feed</h2>
+    <div class="create-post-container">
+      <h1>Create a New Post</h1>
       <form onSubmit$={handleSubmit}>
         <div>
           <br></br>
@@ -74,6 +85,7 @@ export default component$(() => {
         <div>
           <label for="description">Recipe :</label>
           <br></br><br></br>
+          <label for="description">Description:</label>
           <textarea
             id="description"
             value={description.value}
@@ -93,7 +105,7 @@ export default component$(() => {
             required
           />
         </div>
-        <button type="submit" class={styles.css}>Create Post</button>
+        <button type="submit">Create Post</button>
       </form>
       {fileName.value && <p>Selected File: {fileName.value}</p>}
     </div>
