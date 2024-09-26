@@ -59,7 +59,10 @@ export default component$(() => {
       <h2 class={styles.h2}>Post a feed</h2>
       <form onSubmit$={handleSubmit}>
         <div>
+          <br></br>
+          <br></br>
           <label for="title">Name :</label>
+          <br></br><br></br>
           <input
             type="text"
             id="title"
@@ -70,6 +73,7 @@ export default component$(() => {
         </div>
         <div>
           <label for="description">Recipe :</label>
+          <br></br><br></br>
           <textarea
             id="description"
             value={description.value}
@@ -79,6 +83,8 @@ export default component$(() => {
         </div>
         <div>
           <label for="image">Select Image:</label>
+          <br></br>
+          <br></br>
           <input
             type="file"
             id="image"
@@ -87,7 +93,7 @@ export default component$(() => {
             required
           />
         </div>
-        <button type="submit">Create Post</button>
+        <button type="submit" class={styles.css}>Create Post</button>
       </form>
       {fileName.value && <p>Selected File: {fileName.value}</p>}
     </div>
