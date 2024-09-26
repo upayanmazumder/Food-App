@@ -17,7 +17,6 @@ export default component$(() => {
     <footer class={secFooterStyles.footer}>
       <div class={secFooterStyles.container}>
         
-        {/** Company Information */}
         <div class={secFooterStyles.boxCompany}>
           <p class={secFooterStyles.title}>Fork Feed</p>
           <ul class={secFooterStyles.links}>
@@ -47,7 +46,6 @@ export default component$(() => {
           </li>
         </div>
 
-        {/** Support Information */}
         <div class={secFooterStyles.boxSupport}>
           <p class={secFooterStyles.title}>Support</p>
           <div class={secFooterStyles.emailWrapper}>
@@ -58,7 +56,6 @@ export default component$(() => {
             </p>
           </div>
 
-          {/** Social Media Icons */}
           <div class={secFooterStyles.socialIcons}>
             {socialMediaHandles.instagram && (
               <a href={socialMediaHandles.instagram} target="_blank" rel="noopener noreferrer" title="Instagram" class={secFooterStyles.socialIcon}>

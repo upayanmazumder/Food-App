@@ -1,7 +1,6 @@
-/* upload.module.css */
 
 .container {
-  background-color: #ffebee; /* Light red background */
+  background-color: #ffebee; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -15,7 +14,7 @@
 }
 
 h1 {
-  color: #d32f2f; /* Darker red for the title */
+  color: #d32f2f;
   text-align: center;
 }
 
@@ -29,14 +28,14 @@ h1 {
 
 label {
   display: block;
-  color: #b71c1c; /* Dark red for labels */
+  color: #b71c1c; 
   margin-bottom: 5px;
 }
 
 .input, .textarea, .fileInput {
   width: 100%;
   padding: 10px;
-  border: 1px solid #e57373; /* Light red border */
+  border: 1px solid #e57373;
   border-radius: 4px;
   box-sizing: border-box;
   transition: border-color 0.3s ease;
@@ -44,7 +43,7 @@ label {
 }
 
 .input:focus, .textarea:focus, .fileInput:focus {
-  border-color: #c62828; /* Darker red on focus */
+  border-color: #c62828; 
 }
 
 .textarea {
@@ -52,8 +51,7 @@ label {
 }
 
 .button {
-  background-color: #d32f2f; /* Dark red */
-  color: white;
+  background-color: #d32f2f; 
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
@@ -64,5 +62,5 @@ label {
 }
 
 .button:hover {
-  background-color: #c62828; /* Darker red on hover */
+  background-color: #c62828; 
 }

@@ -1,6 +1,4 @@
-/* THIS FILE IS JUST FOR EXAMPLES, DELETE IT IF YOU DON'T NEED IT */
 
-/* SHELL ---------------------------------------- */
 html {
   font-family:
     ui-sans-serif,
@@ -29,7 +27,6 @@ p {
   color: #333333;
 }
 
-/* HEADINGS ------------------------------------- */
 h1,
 h2{
   color: #333333;
@@ -76,7 +73,7 @@ h3 {
   }
 }
 
-/* TAGS ----------------------------------------- */
+
 a {
   text-decoration: none;
   color: var(--qwik-light-blue);
@@ -93,7 +90,6 @@ ul {
   padding-left: 20px;
 }
 
-/* CONTAINER ------------------------------------ */
 .container {
   margin: 0 auto;
   padding: 30px 40px;
@@ -109,7 +105,7 @@ ul {
   text-align: center;
 }
 .container.container-flex {
-  /* does nothing on mobile */
+
 }
 .container.container-spacing-xl {
   padding: 50px 40px;
@@ -129,7 +125,6 @@ ul {
   }
 }
 
-/* BUTTONS -------------------------------------- */
 a.button,
 button {
   background: var(--qwik-light-blue);
@@ -160,7 +155,6 @@ button.button-small {
   }
 }
 
-/* DESIGN --------------------------------------- */
 .ellipsis {
   position: absolute;
   top: 500px;
@@ -200,7 +194,6 @@ button.button-small {
   }
 }
 
-/* used icon pack: https://www.svgrepo.com/collection/phosphor-thin-icons */
 .icon:before {
   width: 18px;
   height: 18px;

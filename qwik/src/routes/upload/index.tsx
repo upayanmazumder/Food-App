@@ -1,7 +1,7 @@
 import { component$, $ } from '@builder.io/qwik';
 import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 import { useSession } from '~/routes/plugin@auth';
-import { useStore } from '@builder.io/qwik'; // Import useStore for reactive state management
+import { useStore } from '@builder.io/qwik'; 
 import styles from "./upload.module.css";
 
 export const onRequest: RequestHandler = (event) => {
