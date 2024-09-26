@@ -4,6 +4,7 @@ import { useSignOut, useSession } from '~/routes/plugin@auth';
 import sessionStyles from "../../components/auth/session/session.module.css";
 import { Form } from '@builder.io/qwik-city';
 import Infobox from "../../components/infobox/infobox";
+import profileStyles from "./profile.module.css";
 
 export const onRequest: RequestHandler = (event) => {
   const session = event.sharedMap.get("session");
@@ -31,8 +32,8 @@ export default component$(() => {
           
           <Infobox>
             <div class={sessionStyles.userInfo}>
-              <p id="p1">{session.value.user?.name}</p>
-              <p id="p2">{session.value.user?.email}</p>
+              <p id="p1" class={profileStyles.p}>{session.value.user?.name}</p>
+              <p id="p2" class={profileStyles.p}>{session.value.user?.email}</p>
             </div>
           </Infobox>
 
