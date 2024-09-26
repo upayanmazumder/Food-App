@@ -1,97 +1,126 @@
 /* CreatePost.module.css */
 
-.create-post-container {
-    max-width: 400px; /* Smaller width */
+:root {
+    --light-red: #ffe6e6;
+    --medium-red: #ff9999;
+    --dark-red: #cc0000;
+    --highlight-red: #ff4d4d;
+    --white: #ffffff;
+    --black: #000000;
+  }
+  
+  .create-post-container {
+    max-width: 400px; /* Limiting the width */
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ff4d4d; /* Red border */
+    padding: 30px; /* Increased padding for a more spacious feel */
+    border: 1px solid var(--highlight-red);
     border-radius: 8px;
-    background-color: #ffe6e6; /* Light red background */
-    box-shadow: 0 2px 10px rgba(255, 77, 77, 0.2);
-    margin-top: 30px;
-    margin-bottom: 40px;
+    background-color: var(--light-red);
+    box-shadow: 0 4px 20px rgba(255, 77, 77, 0.2);
+    margin-top: 40px;
+    margin-bottom: 50px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for container */
+  }
+  
+  .create-post-container:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 8px 30px rgba(255, 77, 77, 0.3); /* Enhanced shadow on hover */
   }
   
   h2 {
     text-align: center;
-    color: #ff4d4d; /* Red title */
-    font-size: 36px !important; /* Slightly smaller font size */
-  }
-  
-  .h2 {
+    color: var(--highlight-red);
+    font-size: 32px;
     margin-bottom: 20px;
   }
+  
   form {
     display: flex;
     flex-direction: column;
   }
   
   div {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #cc0000; /* Darker red for labels */
+    color: var(--dark-red);
   }
   
   input[type="text"],
   textarea {
-    padding: 10px;
-    border: 1px solid #ff9999; /* Lighter red border */
+    max-width: 100%; /* Ensures the input takes full width */
+    padding: 12px; /* Increased padding */
+    border: 1px solid var(--medium-red);
     border-radius: 4px;
     font-size: 16px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animation for input fields */
   }
   
   input[type="text"]:focus,
   textarea:focus {
-    border-color: #ff4d4d; /* Darker red on focus */
+    border-color: var(--highlight-red);
+    box-shadow: 0 0 5px var(--highlight-red);
     outline: none;
   }
   
   input[type="file"] {
     padding: 10px;
+    border: 1px solid var(--medium-red);
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Animation for file input */
+  }
+  
+  input[type="file"]:focus {
+    border-color: var(--highlight-red);
+    outline: none;
   }
   
   button {
-    padding: 10px;
-    background-color: #ff4d4d; /* Red button background */
-    color: white;
+    padding: 12px;
+    background-color: var(--highlight-red);
+    color: var(--white);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s; /* Animation for button */
   }
   
   button:hover {
-    background-color: #cc0000; /* Darker red on hover */
+    background-color: var(--dark-red);
+    transform: scale(1.05); /* Slightly enlarges on hover */
+  }
+  
+  button:focus {
+    outline: 2px solid var(--black); /* Focus outline */
   }
   
   p {
     text-align: center;
-    color: #cc0000; /* Darker red for file name text */
+    color: var(--dark-red);
+    font-weight: bold; /* Emphasizing selected file text */
   }
   
   /* Responsive Styles */
   @media (max-width: 400px) {
     .create-post-container {
-      padding: 15px;
+      padding: 20px;
     }
   
-    h1 {
-      font-size: 20px; /* Smaller font size for the title on small screens */
+    h2 {
+      font-size: 24px; /* Adjusted for smaller screens */
     }
   
     input[type="text"],
     textarea {
-      font-size: 14px;
+      font-size: 14px; /* Adjusted for smaller screens */
     }
   
     button {
-      font-size: 14px;
+      font-size: 14px; /* Adjusted for smaller screens */
     }
   }
   

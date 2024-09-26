@@ -29,8 +29,8 @@ export default component$(() => {
     <>
 
       <main>
-        <AuthBackground />
         <Slot />
+        <AuthBackground />
       </main>
     </>
   );
