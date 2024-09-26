@@ -29,12 +29,13 @@ li {
 .links {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 1px;
   height: fit-content;
   margin-bottom: 5px;
 }
 
 .link {
+  margin-top: 7px;
   display: block;
   color: #c00; /* Bright red for links */
   text-decoration: none;
@@ -42,7 +43,7 @@ li {
 }
 
 .link:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: none; /* Underline on hover */
   color: #e63946; /* Lighter red on hover */
 }
 
