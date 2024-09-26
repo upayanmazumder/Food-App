@@ -5,14 +5,12 @@
 - [ ] Task 1: Front End
 - [ ] Task 2: Back End
 
-## Basic Functions:
-- [ ] Task 0: Being able to sign in 
-- [ ] Task 1: Taking in input about any allergy
+## Basic Functions
+- [x] Task 0: Being able to sign in 
+- [x] Task 1: Taking in input about any allergy
 - [ ] Task 2: Letting the users know if the food is suitable if they suffer from effected conditions 
-- [ ] Task 3: being able to follow poeple
+- [ ] Task 3: being able to follow people
 - [ ] Task 4: Able to upload photos of food people made.
 
-## Exctra Functions: 
+## Exctra Functions
 - [ ] Task 1: Asking the uploader for alternative recepies, highlighting the indegridients that may needed to be changed 
-- [ ] Task 2: 
-
