@@ -9,6 +9,7 @@ const allergensRoutes = require('./routes/allergens');
 const updateAllergiesRoutes = require('./routes/updateAllergies');
 const createPostRoutes = require('./routes/createPost');
 const getAllergiesRoutes = require('./routes/getAllergies');
+const getRecipesRoutes = require('./routes/getRecipes');
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ app.use('/api', allergensRoutes);
 app.use('/api', updateAllergiesRoutes);
 app.use('/api', createPostRoutes);
 app.use('/api', getAllergiesRoutes);
+app.use('/api', getRecipesRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
