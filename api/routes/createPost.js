@@ -25,11 +25,11 @@ const upload = multer({
 
 // POST route for creating a new post
 router.post('/createpost', upload.single('image'), async (req, res) => {
-  const { title, description } = req.body;
+  const { title, description, email } = req.body; // Include email in the body
 
-  // Validate title and description
-  if (!title || !description) {
-    return res.status(400).json({ error: 'Title and description are required' });
+  // Validate title, description, and email
+  if (!title || !description || !email) {
+    return res.status(400).json({ error: 'Title, description, and email are required' });
   }
 
   // Check if image file is uploaded
@@ -64,8 +64,11 @@ router.post('/createpost', upload.single('image'), async (req, res) => {
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
     };
 
-    // Save the post data to Firestore
-    await admin.firestore().collection('posts').add(newPost);
+    // Store the post data in the user's document
+    const userRef = admin.firestore().collection('users').doc(email);
+    await userRef.set({
+      posts: admin.firestore.FieldValue.arrayUnion(newPost) // Add new post to the user's posts array
+    }, { merge: true }); // Merge to avoid overwriting other fields
 
     res.status(201).json({ message: 'Post created successfully', post: newPost });
   } catch (error) {
