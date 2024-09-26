@@ -8,14 +8,9 @@ interface AllergenResponse {
   allergens: string[];
 }
 
-interface UserAllergyResponse {
-  allergies: string[];
-}
-
 interface AllergenStore {
   allergens: string[];
   selectedAllergies: string[];
-  userAllergies: string[];
   loading: boolean;
   error: string | null;
   successMessage: string | null;
@@ -33,7 +28,6 @@ export default component$(() => {
   const store = useStore<AllergenStore>({
     allergens: [],
     selectedAllergies: [],
-    userAllergies: [],
     loading: true,
     error: null,
     successMessage: null,
@@ -41,43 +35,20 @@ export default component$(() => {
 
   const navigate = useNavigate(); // Use Qwik's navigate utility
 
-  // Fetch allergens from the API and user's allergies
+  // Fetch allergens from the API
   useVisibleTask$(() => {
     const fetchAllergens = async () => {
       try {
-        // Fetch available allergens immediately
-        const allergenResponse = await fetch('https://food-app-api.upayan.space/api/allergens');
-        if (!allergenResponse.ok) {
+        const response = await fetch('https://food-app-api.upayan.space/api/allergens');
+        if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-
-        const allergensData: AllergenResponse = await allergenResponse.json();
-        store.allergens = allergensData.allergens;
-
-        // Delay fetching user allergies by 2 seconds (2000 ms)
-        setTimeout(async () => {
-          try {
-            const userAllergyResponse = await fetch(`http://food-app-api.upayan.space/api/get-allergies?email=${session.value?.user?.email}`);
-            if (!userAllergyResponse.ok) {
-              throw new Error('Network response was not ok');
-            }
-            const userAllergiesData: UserAllergyResponse = await userAllergyResponse.json();
-
-            store.userAllergies = userAllergiesData.allergies; // Set user's allergies
-
-            // Preselect user's allergies
-            store.selectedAllergies = userAllergiesData.allergies;
-
-          } catch (error) {
-            store.error = (error as Error).message;
-          } finally {
-            store.loading = false; // Ensure loading is set to false after both requests
-          }
-        }, 2000); // 2 seconds delay
-
+        const data: AllergenResponse = await response.json();
+        store.allergens = data.allergens;
       } catch (error) {
         store.error = (error as Error).message;
-        store.loading = false; // Set loading to false if there's an error
+      } finally {
+        store.loading = false;
       }
     };
 
@@ -124,33 +95,33 @@ export default component$(() => {
 
   return (
     <>
-      <div class="container container-center">
-        <div role="presentation" class="ellipsis"></div>
-        {store.loading && <p>Loading allergens...</p>}
-        {store.error && <p>Error: {store.error}</p>}
-        {store.successMessage && <p>{store.successMessage}</p>}
-        {store.allergens.length > 0 && (
-          <ul>
-            {store.allergens.map((allergen) => (
-              <li key={allergen}>
-                <button
-                  onClick$={() => toggleAllergen(allergen)}
-                  class={`${styles.button} ${store.selectedAllergies.includes(allergen) ? styles.selected : ''} ${store.userAllergies.includes(allergen) ? styles.userAllergy : ''}`}
-                >
-                  {allergen}
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
-        <button
-          onClick$={submitAllergens}
-          class={styles.button}
-          disabled={store.loading || store.selectedAllergies.length === 0}
-        >
-          Submit
-        </button>
-      </div>
+    <div class="container container-center">
+      <div role="presentation" class="ellipsis"></div>
+      {store.loading && <p>Loading allergens...</p>}
+      {store.error && <p>Error: {store.error}</p>}
+      {store.successMessage && <p>{store.successMessage}</p>}
+      {store.allergens.length > 0 && (
+        <ul>
+          {store.allergens.map((allergen) => (
+            <li key={allergen}>
+              <button
+                onClick$={() => toggleAllergen(allergen)}
+                class={`${styles.button} ${store.selectedAllergies.includes(allergen) ? styles.selected : ''}`}
+              >
+                {allergen}
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      <button
+        onClick$={submitAllergens}
+        class={styles.button}
+        disabled={store.loading || store.selectedAllergies.length === 0}
+      >
+        Submit
+      </button>
+    </div>
     </>
   );
 });
