@@ -40,7 +40,7 @@ export default component$(() => {
         // Clear the form after successful submission
         title.value = '';
         description.value = '';
-        email.value = 'upayanm3@gmail.com'; // Reset email to default
+        email.value = ''; // Reset email to default
         fileName.value = null; // Clear the file name
       } else {
         alert('Failed to create post.');
