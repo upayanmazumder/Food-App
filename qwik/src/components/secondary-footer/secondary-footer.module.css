@@ -48,15 +48,16 @@ li {
 }
 
 .address {
-  margin: 0px;
-  font-size: 14px;
+  margin: 2px;
+  font-size: 24px;
   color: #fff; /* White color for address text */
 }
 
 .address p {
-  margin: 1px 0;
+  font-size: 14px;
+  margin: 3px 0;
   color: #b22222 !important; /* Dark red for address details */
-  padding: 1px;
+  padding: 2px;
 }
 
 .phone, .website {
