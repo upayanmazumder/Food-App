@@ -1,9 +1,9 @@
 .footer {
-  background-color: #000000b1;
+  background-color: #ffcccbd0; /* Light red background */
   padding: 40px 20px;
   text-align: left;
   font-family: 'Arial', sans-serif;
-  border-top: 1px solid #0f54d3;
+  border-top: 1px solid #b22222; /* Dark red border */
 }
 
 .container {
@@ -16,55 +16,58 @@
 .title {
   font-size: 20px;
   font-weight: bold;
-  color: #bebebe !important;
+  color: #b22222 !important; /* Dark red for titles */
   margin-bottom: 20px;
 }
 
 li {
   margin: 0;
   list-style: none;
+  padding: 0;
 }
 
 .links {
   list-style: none;
   padding: 0;
   margin: 0;
+  height: fit-content;
+  margin-bottom: 5px;
 }
 
 .link {
   display: block;
-  margin-bottom: 3px;
-  color: #007bff;
+  color: #c00; /* Bright red for links */
   text-decoration: none;
   font-size: 16px;
 }
 
 .link:hover {
-  text-decoration: none;
-  color: #338ff2;
+  text-decoration: underline; /* Underline on hover */
+  color: #e63946; /* Lighter red on hover */
 }
 
 .address {
   margin: 0px;
   font-size: 14px;
+  color: #fff; /* White color for address text */
 }
 
 .address p {
   margin: 1px 0;
-  color: #bebebe !important;
+  color: #b22222 !important; /* Dark red for address details */
   padding: 1px;
 }
 
 .phone, .website {
   font-size: 16px;
-  color: #007bff;
+  color: #c00; /* Bright red for phone and website */
   text-decoration: none;
   margin-top: 1px;
 }
 
 .phone:hover, .website:hover {
-  text-decoration: none;
-  color: #338ff2;
+  text-decoration: underline; /* Underline on hover */
+  color: #e63946; /* Lighter red on hover */
 }
 
 .emailWrapper {
@@ -72,29 +75,31 @@ li {
 }
 
 .email {
-  color: #007bff;
+  color: #c00; /* Bright red for email */
   font-size: 16px;
   text-decoration: none;
 }
 
 .email:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
+  color: #e63946; /* Lighter red on hover */
 }
 
 .socialIcons {
   margin-top: 20px;
+  margin-left: 10px;
   display: flex;
   gap: 15px;
 }
 
 .socialIcon {
-  color: #b2b3b4;
+  color: #b22222; /* Dark red for social icons */
   font-size: 24px;
   transition: color 0.2s ease;
 }
 
 .socialIcon:hover {
-  color: #007bff;
+  color: #e63946; /* Lighter red on hover */
 }
 
 .boxCompany, .boxSupport {
