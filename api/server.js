@@ -11,13 +11,8 @@ const createPostRoutes = require('./routes/createPost');
 
 dotenv.config();
 
-// Validate required environment variables
-if (!process.env.PORT) {
-  throw new Error('Missing required environment variable: PORT');
-}
-
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; // Use default port 3000 if PORT is not defined
 
 // Middleware
 app.use(cors());
