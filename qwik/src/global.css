@@ -15,18 +15,11 @@
   --qwik-dark-background: #333333;
   --qwik-dark-text: #ffffff;
   --qwik-social-blue: #1DA1F2;
-  --qwik-soft-cream:#FFF8E1;
+  --qwik-soft-cream: #FFF8E1;
   --qwik-charcol-gray: #333333;
-  --qwik-leafy-green:#32CD32;
+  --qwik-leafy-green: #32CD32;
   --qwik-bright-yellow: #FFD700;
-  --qwik-warm-orange:#FF6347 ;
-  
-  
-  
-  
-  
-  
-
+  --qwik-warm-orange: #FF6347;
 }
 
 html {
@@ -36,24 +29,15 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
   font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    "Noto Sans",
-    sans-serif,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Color Emoji";
+    "Red Hat Display", 
+    "Red Hat Text",
 }
 
 body {
   padding: 0;
   margin: 0;
   line-height: inherit;
+  font-family:
+  "Red Hat Display", 
+  "Red Hat Text",
 }
