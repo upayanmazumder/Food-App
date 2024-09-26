@@ -1,7 +1,7 @@
 # Fork Feed
 
 ![License](https://img.shields.io/badge/license-MIT-brightgreen)
-![Node.js](https://img.shields.io/badge/node.js-v16.13.1-green)
+![Node.js](https://img.shields.io/badge/node.js-v20.17.0-green)
 ![Qwik](https://img.shields.io/badge/framework-Qwik-blue)
 ![Firebase](https://img.shields.io/badge/database-Firebase-orange)
 ![CI/CD](https://img.shields.io/badge/CI/CD-Docker%20%26%20Kubernetes-blueviolet)
@@ -39,7 +39,7 @@ To get started with the Fork Feed project locally, follow these instructions:
 
 #### Prerequisites
 
-- Node.js (v16.13.1 or above)
+- Node.js (v20.17.0 or above)
 - Docker
 - Firebase account
 
