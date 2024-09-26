@@ -56,12 +56,12 @@ router.post('/createpost', upload.single('image'), async (req, res) => {
     await file.makePublic();
     const imageUrl = `https://storage.googleapis.com/${bucket.name}/posts/${fileName}`;
 
-    // Create a new post object
+    // Create a new post object without the createdAt field
     const newPost = {
       title,
       description,
       imageUrl, // Firebase Storage URL
-      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      createdAt: admin.firestore.FieldValue.serverTimestamp(), // Set createdAt outside of the array
     };
 
     // Save the post data to the user's document
