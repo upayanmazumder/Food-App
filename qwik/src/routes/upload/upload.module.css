@@ -32,6 +32,13 @@ label {
   margin-bottom: 5px;
 }
 
+.loading {
+  color: #007bff; /* Change this to your preferred color */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
 .input, .textarea, .fileInput {
   width: 100%;
   padding: 10px;

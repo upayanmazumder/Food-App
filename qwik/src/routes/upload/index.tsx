@@ -18,10 +18,12 @@ export default component$(() => {
     description: '',
     email: session.value?.user?.email || '',
     fileName: null as string | null,
+    loading: false,  // New property to track loading state
   });
 
   const handleSubmit = $(async (event: Event) => {
     event.preventDefault();
+    formData.loading = true;  // Set loading to true
 
     const fd = new FormData();
     fd.append('email', formData.email); 
@@ -35,6 +37,7 @@ export default component$(() => {
       fd.append('image', selectedFile); 
     } else {
       alert('Please select an image to upload.');
+      formData.loading = false; // Reset loading on error
       return;
     }
 
@@ -44,15 +47,11 @@ export default component$(() => {
         body: fd,
       });
 
-      console.log('Response status:', response.status);
-      console.log('Response body:', await response.text());
-
       if (response.ok) {
         alert('Post created successfully!');
         // Reset form data
         formData.title = '';
         formData.description = '';
-        formData.email = ''; 
         formData.fileName = null;
       } else {
         const errorMsg = await response.text();
@@ -60,7 +59,9 @@ export default component$(() => {
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('An error occurred while creating the post.');
+      alert('An error occurred while creating the post. Please try again.');
+    } finally {
+      formData.loading = false; // Reset loading state after upload completes
     }
   });
 
@@ -108,6 +109,7 @@ export default component$(() => {
         <button type="submit" class={styles.button}>Add</button>
       </form>
       {formData.fileName && <p>Selected File: {formData.fileName}</p>}
+      {formData.loading && <p class={styles.loading}>Uploading...</p>} {/* Loading Indicator */}
     </div>
   );
 });
