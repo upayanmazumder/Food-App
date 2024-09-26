@@ -69,5 +69,10 @@ label {
 }
 
 .button:hover {
-  background-color: #c62828; 
+  background-color: #bb0e0e; 
+}
+.fileInput{
+  background-color: #e57373;
+  color: #ffebee;
+  font-size: 1.1rem;
 }
