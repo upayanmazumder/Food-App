@@ -1,12 +1,13 @@
 .footer {
-  background-color: #ffcccbd0; /* Light red background */
+  background-color: #ffcccbd0; 
   padding: 40px 20px;
   text-align: left;
   font-family: 'Arial', sans-serif;
-  border-top: 1px solid #b22222; /* Dark red border */
+  border-top: 1px solid #b22222; 
 }
 
 .container {
+
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -14,9 +15,10 @@
 }
 
 .title {
+  margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
-  color: #b22222 !important; /* Dark red for titles */
+  color: #b22222 !important; 
   margin-bottom: 20px;
 }
 
@@ -29,47 +31,45 @@ li {
 .links {
   list-style: none;
   padding: 0;
-  margin: 1px;
   height: fit-content;
   margin-bottom: 5px;
 }
 
 .link {
-  margin-top: 7px;
+  margin-top: 15px;
   display: block;
-  color: #c00; /* Bright red for links */
+  color: #c00; 
   text-decoration: none;
   font-size: 16px;
 }
 
 .link:hover {
-  text-decoration: none; /* Underline on hover */
-  color: #e63946; /* Lighter red on hover */
+  text-decoration: none; 
+  color: #e63946; 
 }
 
 .address {
-  margin: 2px;
-  font-size: 24px;
-  color: #fff; /* White color for address text */
+  font-size: 34px;
+  color: #fff; 
 }
 
 .address p {
-  font-size: 14px;
-  margin: 3px 0;
-  color: #b22222 !important; /* Dark red for address details */
-  padding: 2px;
+  margin-top: 15px;
+  font-size: 17px;
+  color: #b22222 !important; 
+  padding: 0px;
 }
 
 .phone, .website {
-  font-size: 16px;
-  color: #c00; /* Bright red for phone and website */
+  font-size: 18px;
+  color: #c00; 
   text-decoration: none;
-  margin-top: 1px;
+  margin-top: 15px;
 }
 
 .phone:hover, .website:hover {
-  text-decoration: underline; /* Underline on hover */
-  color: #e63946; /* Lighter red on hover */
+  text-decoration: none;
+  color: #e63946; 
 }
 
 .emailWrapper {
@@ -77,14 +77,14 @@ li {
 }
 
 .email {
-  color: #c00; /* Bright red for email */
+  color: #c00; 
   font-size: 16px;
   text-decoration: none;
 }
 
 .email:hover {
-  text-decoration: underline; /* Underline on hover */
-  color: #e63946; /* Lighter red on hover */
+  text-decoration: none; 
+  color: #e63946; 
 }
 
 .socialIcons {
@@ -95,21 +95,22 @@ li {
 }
 
 .socialIcon {
-  color: #b22222; /* Dark red for social icons */
+  transform: scale(1.2);
+  color: #b22222;
   font-size: 24px;
   transition: color 0.2s ease;
 }
 
 .socialIcon:hover {
-  color: #e63946; /* Lighter red on hover */
+  transform: scale();
+  color: #e63946;
 }
 
 .boxCompany, .boxSupport {
-  width: 45%;
   padding: 0 10%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .container {
     flex-direction: column;
     text-align: center;
