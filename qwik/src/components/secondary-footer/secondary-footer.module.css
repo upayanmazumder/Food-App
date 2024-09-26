@@ -13,14 +13,10 @@
   margin: 0 auto;
 }
 
-p {
-  color:#a1a3a5 !important; 
-}
-
 .title {
   font-size: 20px;
   font-weight: bold;
-  color: #bebebe;
+  color: #bebebe !important;
   margin-bottom: 20px;
 }
 
@@ -49,14 +45,14 @@ li {
 }
 
 .address {
-  margin-top: 0px;
+  margin: 0px;
   font-size: 14px;
-
 }
 
 .address p {
-  margin: 3px 0;
-  color: #afafaf;
+  margin: 1px 0;
+  color: #bebebe !important;
+  padding: 1px;
 }
 
 .phone, .website {

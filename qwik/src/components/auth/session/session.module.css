@@ -39,7 +39,7 @@
   .userInfo {
     display: flex;
     flex-direction: column;
-    color: rgb(255, 253, 253);
+    color: rgb(255, 253, 253) !important;
     flex-grow: 1;
     padding: 0 10px; 
     font-size: small;
@@ -49,6 +49,7 @@
     margin: 0;
     font-size: 0.9rem; /* Smaller text */
     line-height: 1.2rem;
+    color: rgb(255, 253, 253) !important;
   }
   
   .email {

@@ -51,7 +51,7 @@ export default component$(() => {
               <a href={`mailto:${companyDetails.email}`} class={secFooterStyles.email}>
                 {companyDetails.email}
               </a>
-            </p>T
+            </p>
           </div>
 
           {/** Social Media Icons */}
