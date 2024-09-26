@@ -48,18 +48,16 @@ export default component$(() => {
       });
 
       if (response.ok) {
-        alert('Post created successfully!');
         // Reset form data
         formData.title = '';
         formData.description = '';
         formData.fileName = null;
       } else {
         const errorMsg = await response.text();
-        alert(`Failed to create post: ${errorMsg}`);
+        console.log(`Error: ${errorMsg}`);
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('An error occurred while creating the post. Please try again.');
     } finally {
       formData.loading = false; // Reset loading state after upload completes
     }
