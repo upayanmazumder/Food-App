@@ -1,14 +1,13 @@
 {
-  "name": "healthcare-dashboard",
+  "name": "fork-feed",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "api": "node api/server",
     "dev": "cd qwik && npm run dev"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "upayanmazumder",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
