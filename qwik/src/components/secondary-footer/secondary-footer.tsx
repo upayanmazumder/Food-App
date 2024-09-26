@@ -25,6 +25,10 @@ export default component$(() => {
             <li><a href="/privacy-policy" class={secFooterStyles.link}>Privacy Policy</a></li>
             <li><a href="/cookies" class={secFooterStyles.link}>Cookies</a></li>
           </ul>
+          </div>
+          <br></br>
+          <br></br>
+          <div>
           <address class={secFooterStyles.address}>
             <p>{companyDetails.companyName}</p>
             <p>{companyDetails.address.street}</p>
