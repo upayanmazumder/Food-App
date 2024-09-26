@@ -1,5 +1,5 @@
 const express = require('express');
-const admin = require('firebase-admin');
+const admin = require('../firebaseAdmin'); // Import centralized admin instance
 const { isEmail } = require('validator');
 
 const router = express.Router();
@@ -22,7 +22,7 @@ router.post('/auth', async (req, res) => {
     }
 
     try {
-        // Check if user exists
+        // Check if user exists in Firestore
         const userSnapshot = await admin.firestore().collection('users').doc(email).get();
 
         if (userSnapshot.exists) {
