@@ -69,16 +69,6 @@ export default component$(() => {
       <h1>Create a New Post</h1>
       <form onSubmit$={handleSubmit}>
         <div>
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email.value}
-            onInput$={(e) => (email.value = (e.target as HTMLInputElement).value)}
-            required
-          />
-        </div>
-        <div>
           <label for="title">Title:</label>
           <input
             type="text"
