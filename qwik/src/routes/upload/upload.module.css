@@ -1,126 +1,68 @@
-/* CreatePost.module.css */
+/* upload.module.css */
 
-:root {
-    --light-red: #ffe6e6;
-    --medium-red: #ff9999;
-    --dark-red: #cc0000;
-    --highlight-red: #ff4d4d;
-    --white: #ffffff;
-    --black: #000000;
-  }
-  
-  .create-post-container {
-    max-width: 400px; /* Limiting the width */
-    margin: 0 auto;
-    padding: 30px; /* Increased padding for a more spacious feel */
-    border: 1px solid var(--highlight-red);
-    border-radius: 8px;
-    background-color: var(--light-red);
-    box-shadow: 0 4px 20px rgba(255, 77, 77, 0.2);
-    margin-top: 40px;
-    margin-bottom: 50px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Animation for container */
-  }
-  
-  .create-post-container:hover {
-    transform: translateY(-5px); /* Subtle lift on hover */
-    box-shadow: 0 8px 30px rgba(255, 77, 77, 0.3); /* Enhanced shadow on hover */
-  }
-  
-  h2 {
-    text-align: center;
-    color: var(--highlight-red);
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  div {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: var(--dark-red);
-  }
-  
-  input[type="text"],
-  textarea {
-    max-width: 100%; /* Ensures the input takes full width */
-    padding: 12px; /* Increased padding */
-    border: 1px solid var(--medium-red);
-    border-radius: 4px;
-    font-size: 16px;
-    transition: border-color 0.3s, box-shadow 0.3s; /* Animation for input fields */
-  }
-  
-  input[type="text"]:focus,
-  textarea:focus {
-    border-color: var(--highlight-red);
-    box-shadow: 0 0 5px var(--highlight-red);
-    outline: none;
-  }
-  
-  input[type="file"] {
-    padding: 10px;
-    border: 1px solid var(--medium-red);
-    border-radius: 4px;
-    transition: border-color 0.3s; /* Animation for file input */
-  }
-  
-  input[type="file"]:focus {
-    border-color: var(--highlight-red);
-    outline: none;
-  }
-  
-  button {
-    padding: 12px;
-    background-color: var(--highlight-red);
-    color: var(--white);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.3s; /* Animation for button */
-  }
-  
-  button:hover {
-    background-color: var(--dark-red);
-    transform: scale(1.05); /* Slightly enlarges on hover */
-  }
-  
-  button:focus {
-    outline: 2px solid var(--black); /* Focus outline */
-  }
-  
-  p {
-    text-align: center;
-    color: var(--dark-red);
-    font-weight: bold; /* Emphasizing selected file text */
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 400px) {
-    .create-post-container {
-      padding: 20px;
-    }
-  
-    h2 {
-      font-size: 24px; /* Adjusted for smaller screens */
-    }
-  
-    input[type="text"],
-    textarea {
-      font-size: 14px; /* Adjusted for smaller screens */
-    }
-  
-    button {
-      font-size: 14px; /* Adjusted for smaller screens */
-    }
-  }
-  
+.container {
+  background-color: #ffebee; /* Light red background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 35px auto;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  color: #d32f2f; /* Darker red for the title */
+  text-align: center;
+}
+
+.h1 {
+  font-size: 36px !important;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  color: #b71c1c; /* Dark red for labels */
+  margin-bottom: 5px;
+}
+
+.input, .textarea, .fileInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e57373; /* Light red border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+  max-width: 460px;
+}
+
+.input:focus, .textarea:focus, .fileInput:focus {
+  border-color: #c62828; /* Darker red on focus */
+}
+
+.textarea {
+  min-height: 100px;
+}
+
+.button {
+  background-color: #d32f2f; /* Dark red */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #c62828; /* Darker red on hover */
+}

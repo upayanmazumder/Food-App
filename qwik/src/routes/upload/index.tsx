@@ -1,6 +1,8 @@
-import { component$, useSignal, $ } from '@builder.io/qwik';
+import { component$, $ } from '@builder.io/qwik';
 import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
 import { useSession } from '~/routes/plugin@auth';
+import { useStore } from '@builder.io/qwik'; // Import useStore for reactive state management
+import styles from "./upload.module.css";
 
 export const onRequest: RequestHandler = (event) => {
   const session = event.sharedMap.get("session");
@@ -10,27 +12,27 @@ export const onRequest: RequestHandler = (event) => {
 };
 
 export default component$(() => {
-  const title = useSignal('');
   const session = useSession();
-  const description = useSignal('');
-  const email = useSignal(session.value?.user?.email);
-  const fileName = useSignal<string | null>(null);
+  const formData = useStore({
+    title: '',
+    description: '',
+    email: session.value?.user?.email || '',
+    fileName: null as string | null,
+  });
 
   const handleSubmit = $(async (event: Event) => {
     event.preventDefault();
 
-    // Create FormData object to send with the POST request
-    const formData = new FormData();
-    formData.append('email', email.value || ''); 
-    formData.append('title', title.value);
-    formData.append('description', description.value);
+    const fd = new FormData();
+    fd.append('email', formData.email); 
+    fd.append('title', formData.title);
+    fd.append('description', formData.description);
 
-    // Get the file input element directly
     const fileInput = document.getElementById('image') as HTMLInputElement;
     const selectedFile = fileInput.files?.[0]; 
 
     if (selectedFile) {
-      formData.append('image', selectedFile); 
+      fd.append('image', selectedFile); 
     } else {
       alert('Please select an image to upload.');
       return;
@@ -39,18 +41,22 @@ export default component$(() => {
     try {
       const response = await fetch('http://food-app-api.upayan.space/api/createpost', {
         method: 'POST',
-        body: formData,
+        body: fd,
       });
+
+      console.log('Response status:', response.status);
+      console.log('Response body:', await response.text());
 
       if (response.ok) {
         alert('Post created successfully!');
-
-        title.value = '';
-        description.value = '';
-        email.value = ''; 
-        fileName.value = null;
+        // Reset form data
+        formData.title = '';
+        formData.description = '';
+        formData.email = ''; 
+        formData.fileName = null;
       } else {
-        alert('Failed to create post.');
+        const errorMsg = await response.text();
+        alert(`Failed to create post: ${errorMsg}`);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -60,46 +66,48 @@ export default component$(() => {
 
   const handleFileChange = $(async (event: Event) => {
     const target = event.target as HTMLInputElement;
-
-    fileName.value = target.files?.[0]?.name || null;
+    formData.fileName = target.files?.[0]?.name || null;
   });
 
   return (
-    <div class="create-post-container">
-      <h1>Create a New Post</h1>
+    <div class={styles.container}>
+      <h1 class={styles.h1}>Add to feed</h1>
       <form onSubmit$={handleSubmit}>
-        <div>
-          <label for="title">Title:</label>
+        <div class={styles.formGroup}>
+          <label for="title">Name :</label>
           <input
             type="text"
             id="title"
-            value={title.value}
-            onInput$={(e) => (title.value = (e.target as HTMLInputElement).value)}
+            value={formData.title}
+            onInput$={(e) => (formData.title = (e.target as HTMLInputElement).value)}
             required
+            class={styles.input}
           />
         </div>
-        <div>
-          <label for="description">Description:</label>
+        <div class={styles.formGroup}>
+          <label for="description">Recipe :</label>
           <textarea
             id="description"
-            value={description.value}
-            onInput$={(e) => (description.value = (e.target as HTMLTextAreaElement).value)}
+            value={formData.description}
+            onInput$={(e) => (formData.description = (e.target as HTMLTextAreaElement).value)}
             required
+            class={styles.textarea}
           />
         </div>
-        <div>
-          <label for="image">Select Image:</label>
+        <div class={styles.formGroup}>
+          <label for="image">Select a picture</label>
           <input
             type="file"
             id="image"
             accept="image/*"
             onChange$={handleFileChange}
             required
+            class={styles.fileInput}
           />
         </div>
-        <button type="submit">Create Post</button>
+        <button type="submit" class={styles.button}>Add</button>
       </form>
-      {fileName.value && <p>Selected File: {fileName.value}</p>}
+      {formData.fileName && <p>Selected File: {formData.fileName}</p>}
     </div>
   );
 });
