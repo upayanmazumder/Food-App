@@ -109,8 +109,8 @@ li {
 }
 
 .boxCompany, .boxSupport {
-  width: 55%;
-  padding: 1% 10%;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 @media (max-width: 768px) {
