@@ -39,7 +39,7 @@ export default component$(() => {
     }
 
     try {
-      const response = await fetch('http://food-app-api.upayan.space/api/createpost', {
+      const response = await fetch('https://food-app-api.upayan.space/api/createpost', {
         method: 'POST',
         body: fd,
       });
