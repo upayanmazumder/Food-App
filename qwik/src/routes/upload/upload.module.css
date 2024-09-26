@@ -1,0 +1,97 @@
+/* CreatePost.module.css */
+
+.create-post-container {
+    max-width: 400px; /* Smaller width */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ff4d4d; /* Red border */
+    border-radius: 8px;
+    background-color: #ffe6e6; /* Light red background */
+    box-shadow: 0 2px 10px rgba(255, 77, 77, 0.2);
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #ff4d4d; /* Red title */
+    font-size: 36px !important; /* Slightly smaller font size */
+  }
+  
+  .h2 {
+    margin-bottom: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cc0000; /* Darker red for labels */
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ff9999; /* Lighter red border */
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #ff4d4d; /* Darker red on focus */
+    outline: none;
+  }
+  
+  input[type="file"] {
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #ff4d4d; /* Red button background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
+  
+  p {
+    text-align: center;
+    color: #cc0000; /* Darker red for file name text */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 400px) {
+    .create-post-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px; /* Smaller font size for the title on small screens */
+    }
+  
+    input[type="text"],
+    textarea {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  

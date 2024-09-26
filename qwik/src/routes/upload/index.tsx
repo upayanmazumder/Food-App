@@ -1,6 +1,7 @@
 import { component$, useSignal, $ } from '@builder.io/qwik';
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { useSession } from '~/routes/plugin@auth';
+import styles from './upload.module.css';
 
 export default component$(() => {
   const title = useSignal('');
@@ -10,20 +11,18 @@ export default component$(() => {
   const fileName = useSignal<string | null>(null);
 
   const handleSubmit = $(async (event: Event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
 
-    // Create FormData object to send with the POST request
     const formData = new FormData();
     formData.append('email', email.value || '');
     formData.append('title', title.value);
     formData.append('description', description.value);
 
-    // Get the file input element directly
     const fileInput = document.getElementById('image') as HTMLInputElement;
-    const selectedFile = fileInput.files?.[0]; // Use optional chaining
+    const selectedFile = fileInput.files?.[0];
 
     if (selectedFile) {
-      formData.append('image', selectedFile); // Append the actual file object
+      formData.append('image', selectedFile);
     } else {
       alert('Please select an image to upload.');
       return;
@@ -37,11 +36,10 @@ export default component$(() => {
 
       if (response.ok) {
         alert('Post created successfully!');
-        // Clear the form after successful submission
         title.value = '';
         description.value = '';
-        email.value = ''; // Reset email to default
-        fileName.value = null; // Clear the file name
+        email.value = '';
+        fileName.value = null;
       } else {
         alert('Failed to create post.');
       }
@@ -53,17 +51,15 @@ export default component$(() => {
 
   const handleFileChange = $(async (event: Event) => {
     const target = event.target as HTMLInputElement;
-
-    // Safely set the file name (not the File object)
-    fileName.value = target.files?.[0]?.name || null; // Optional chaining to avoid null access
+    fileName.value = target.files?.[0]?.name || null;
   });
 
   return (
-    <div class="create-post-container">
-      <h1>Create a New Post</h1>
+    <div class={styles['create-post-container']}>
+      <h2 class={styles.h2}>Post a feed</h2>
       <form onSubmit$={handleSubmit}>
         <div>
-          <label for="title">Title:</label>
+          <label for="title">Name :</label>
           <input
             type="text"
             id="title"
@@ -73,7 +69,7 @@ export default component$(() => {
           />
         </div>
         <div>
-          <label for="description">Description:</label>
+          <label for="description">Recipe :</label>
           <textarea
             id="description"
             value={description.value}
@@ -93,7 +89,7 @@ export default component$(() => {
         </div>
         <button type="submit">Create Post</button>
       </form>
-      {fileName.value && <p>Selected File: {fileName.value}</p>} {/* Display selected file name */}
+      {fileName.value && <p>Selected File: {fileName.value}</p>}
     </div>
   );
 });
